@@ -1,0 +1,31 @@
+server: 
+  port: 8000
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+      force-request: true
+      force-response: true
+  tomcat: 
+    uri-encoding: UTF-8
+    
+spring:
+  datasource:
+    url: jdbc:mariadb://web-study-0223.cb8c0c6206ug.ap-northeast-2.rds.amazonaws.com:3306/okkyjobs
+    username: admin
+    password: 46tkfkdgo!Q
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+mybatis:
+  mapper-locations: classpath:/mappers/*.xml
+  type-aliases-package: com.example.okkyjobs.domain.board
+# 다 안 썼음

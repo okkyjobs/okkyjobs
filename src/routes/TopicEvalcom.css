@@ -1,0 +1,214 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+.good-bad {
+  position: relative;
+  min-height : calc(270vh);
+  margin-top: 6.8%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.topic-banner {
+    width: 100%;
+    /* margin: 10px auto; */
+    position: relative;
+}
+
+.topic-banner img {
+  width: 830px;
+  padding-bottom: 5%;
+  border-bottom: 1px solid rgb(222, 222, 222);
+}
+
+.good-bad-tag-title {
+    position: absolute;
+    top: 28%;
+    left: 46%;
+    /* width: 100%; */
+    font-size: 24px;
+    font-weight: 600;
+    /* margin-left: 45%; */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0px;
+}
+
+.post-button {
+  display: flex;
+  background-color: #0090F9;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 7px;
+  padding: 8px 16px 8px 12px;
+}
+
+.post-button-img {
+  margin-right: 4px;
+}
+
+.topic-search-middle {
+  display: flex;
+  margin-left: 42px;
+  padding: 6px 8px;
+  border: 1px solid rgb(222, 222, 222);
+  border-radius: 25px;
+  width: 27%;
+}
+
+.topic-search-middle img {
+  width: 18px;
+}
+
+.topic-tag-search-input {
+  padding-left: 6px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.search-left {
+    display: flex;
+}
+
+.search-left img {
+  width: 18px;
+}
+
+.search-left a {
+    text-decoration: none;
+}
+
+.search-right span {
+  font-size: 14px;
+  color: #4B5563;
+  font-weight: 400;
+  margin-right: 16px;
+}
+
+.search-right img {
+  height: 10px;
+  cursor: pointer;
+}
+
+.topic-sequence-button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+    background-color: #ffffff;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    /* margin-left: 10px; */
+    padding: 8px 16px 8px 12px;
+}
+
+.post-sequence-button img {
+    margin-bottom: -4.5px;
+    margin-right: 4px;
+}
+
+.post-sequence-button:hover {
+    border-color: #111827;
+}
+
+.left-page-button {
+  margin-right: 16px;
+}
+
+.post-main {
+  padding: 16px 0px;
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.blue-point {
+  color: #111827;
+  text-decoration: none;
+}
+
+.blue-point:hover {
+  color: #0090F9;
+  cursor: pointer;
+}
+
+.post-main-top {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.post-main-top img {
+  margin-left: -6px;
+  width: 20px;
+}
+
+.post-main-top a {
+  margin-left: 6px;
+}
+
+.post-profile {
+  cursor: pointer;
+}
+
+.post-main-middle {
+
+  font-size: 16px;
+  margin: 16px 0px;
+  font-weight: 600;
+}
+
+.post-main-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-information {
+  display: flex;
+}
+
+.read-information span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.post-main-bottom img {
+  width: 20px;
+  height: 18px;
+  margin: 0px 4px;
+}
+
+.good-bad-tag {
+  font-size: 14px;
+  color: #4B5563;
+}
+
+.page-previous-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 60px;
+  padding: 18px 0px 100px;
+  border-top: 1px solid rgb(222, 222, 222);
+}
+
+.page-num {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.page-num span {
+  padding: 16px;
+}
+
+.dot {
+  color: rgb(200, 200, 200);
+}

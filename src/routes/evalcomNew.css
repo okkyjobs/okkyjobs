@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+.good-bad-post {
+  position: relative;
+  /* margin-top: 6%; */
+  height: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+.main input {
+  padding: 0px 8px;
+}
+
+.title-input {
+  font-size: 16px;
+  width: 836.6px;
+  height: 40px;
+  padding: 0px 10px;
+
+  border-radius: 7px;
+  border: 1.5px solid rgb(222, 222, 222);
+}
+
+.tag-input {
+  font-size: 16px;
+  width: 836.6px;
+  height: 40px;
+  padding: 0px 10px;
+
+  border-radius: 7px;
+  border: 1.5px solid rgb(222, 222, 222);
+}
+
+.content-input {
+  font-size: 16px;
+  width: 836.6px;
+  height: 300px;
+  padding: 10px;
+ 
+  border-radius: 7px;
+  border: 1.5px solid rgb(222, 222, 222);
+}
+
+.title-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.title-tag {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.title-content {
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.title-tag-in {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #0090F9;
+}
+
+.title {
+  padding-top: 36px;
+}
+
+.evalcom-new-tag {
+  padding-top: 36px;
+}
+
+.content {
+  padding-top: 36px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: right;
+  /* position: relative; */
+  margin: 40px 340px 80px 0px;
+}
+
+.cancel-button button {
+  padding: 8px 16px;
+  margin-right: 12px;
+  background-color: #ffffff;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.upload-button button {
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #0090F9;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #0090F9;
+}

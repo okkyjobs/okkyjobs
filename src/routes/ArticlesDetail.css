@@ -1,0 +1,293 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+.posting {
+    /* position: relative; */
+    margin-top: 7%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .top-above {
+    margin-bottom: 42px;
+    width: 828.8px;
+  }
+  
+.borderline {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color:#D2D4D8;
+  margin: 8px 0px;  
+}
+
+.borderline::before {
+    content: "";
+    flex-grow: 0.03;
+    margin: 0px 10px;
+    background: #D2D4D8;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.borderline::after {
+    content: "";
+    flex-grow: 1;
+    margin: 0px 10px;
+    background: #D2D4D8;
+    height: 1px;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+
+  .top-above a {
+    color: #202020;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .top-above a:hover {
+    color: #0090F9;
+  }
+  
+  .top-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .top-a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-profile-img {
+    margin-right: 14px;
+    
+  }
+  
+  .top-profile-info-name {
+    padding-bottom: 2px;
+  }
+
+  .top-profile-info a {
+    text-decoration: none;
+    color: #111827;
+  }
+  
+  .top-profile-info-date {
+    font-size: 14px;
+  }
+  
+  .top-profile-info-date-view {
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-profile-info-view {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .top-profile-info-view img {
+    width: 18px;
+    margin: 0px 4px;
+  }
+  
+  .option {
+    display: flex;
+  }
+  
+  .option img {
+    width: 22px;
+  }
+  
+  .scrap {
+    margin-left: 20px;
+  }
+  
+  .modify {
+    margin-left: 20px;
+  }
+  
+  .top-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 34px 0px 40px;
+  }
+  
+  .top-content {
+    height: 94px;
+  }
+  
+  .like-and-unlike {
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  
+    padding-bottom: 76px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+  }
+  
+  .like-and-unlike img {
+    height: 22px;
+    margin-left: 6px;
+  }
+  
+  .like-count{
+    margin-left: 6px;
+  }
+  
+  .unlike-count{
+    margin-left: 6px;
+  }
+  
+  .like {
+    margin-left: 6px;
+    align-items: center;
+  }
+  
+  .unlike {
+    margin-left: 6px;
+    align-items: center;
+  }
+  
+  
+  .content-count {
+    margin: 22px 0px;
+    font-size: 16px;
+    color: #111827;
+  }
+  
+  .comment-out-box {
+    height: 204px;
+    padding: 24px;
+    margin: 42px 0px 24px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 8px;
+    display: flex;
+  }
+  
+  .my-profile {
+    width: 44px;
+    height: 178px;
+    margin-right: 14px;
+  }
+  
+  .comment-in-box {
+    height: 108px;
+    width: 700px;
+    padding: 8px;
+    border: 0.1px solid rgb(210, 210, 210);
+    border-radius: 6px;
+    padding: 10px;
+  }
+  
+  .write-comment {
+    position: relative;
+    left: 290px;
+  }
+  
+  .write-comment-button {
+    margin-top: 14px;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 7px;
+    border: 1px solid #0090F9;
+    background-color: #0090F9;
+  }
+  
+  
+  .comment-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 24px 0px; */
+  }
+  
+  .comment-a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .comment-profile-img {
+    margin-right: 10px;
+  }
+  
+  .comment-profile img {
+    width: 48px;
+  }
+  
+  
+  .comment-profile-info-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  
+  .comment-profile-info-date {
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 3px;
+  }
+  
+  .comment-like-and-unlike {
+    font-size: 16px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  
+  .comment-like-and-unlike img {
+    width: 16px;
+    margin-left: 6px;
+  }
+  
+  .comment-like-count{
+    margin-left: 6px;
+  }
+  
+  .comment-unlike-count{
+    margin-left: 6px;
+  }
+  
+  .comment-like {
+    margin-left: 6px;
+    align-items: center;
+  }
+  
+  
+  .comment-unlike {
+    margin-left: 6px;
+    align-items: center;
+  }
+  
+  .comment-a-and-b {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .read-comment {
+    padding: 6px 0px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .bottom {
+    padding: 28px 0px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+  }
+  
+  .bottom-on {
+    margin-bottom: 20%;
+  }
+  

@@ -1,0 +1,212 @@
+.productsr {
+    margin-top: 5%;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.productsr-pricing {
+    font-weight: 600;
+    color: blueviolet;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.productsr-best-font {
+    margin-top: 4px;
+    font-size: 36px;
+
+}
+
+.productsr-top h1 {
+    margin-top: -4px;
+    font-size: 48px;
+}
+
+.productsr-info1 {
+    margin-top: 1.5%;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+.productsr-info2 {
+    margin-top: 1%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.productsr-middle {
+    display: flex;
+    margin-top: 4%;
+    margin-left: 9%;
+    margin-bottom: 4%;
+}
+
+.productsr-middle-box1 {
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 22px;
+    width: 295.4px;
+    height: 434px;
+    padding: 34px;
+    margin-right: 1.5%;
+    text-align: left;
+}
+
+.productsr-middle-box1-n {
+    padding: 8px 0px;
+    font-size: 18px;
+    color: #111827;
+    font-weight: 600;
+}
+
+.productsr-price-and-won {
+    align-items: last baseline;
+    margin-top: 8%;
+    display: flex;
+}
+
+.productsr-price {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.productsr-price-won {
+    margin-left: 3px;
+    font: 14px;
+}
+
+.cost-price-and-discount {
+    margin-top: 4px;
+    font-weight: 500;
+    display: flex;
+}
+
+.cost-price {
+    font-size: 20px;
+    text-decoration-line: line-through;
+    color: rgb(185, 185, 185)
+}
+
+.discount {
+    margin-left: 5px;
+    font-size: 20px;
+    color: red;
+}
+
+.productsr-paychceck {
+    margin-top: 40px;
+}
+
+.r-paycheck {
+    height: 14px;
+    margin-right: 18px;
+}
+
+.r-check1 {
+    align-items: center;
+}
+
+.r-pay-info1 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.r-check2 {
+    margin-top: 20px;
+    align-items: center;
+}
+    
+.r-pay-info2 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.r-check3 {
+    margin-top: 20px;
+    align-items: center;
+}
+    
+
+.r-pay-info3 {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.r-pay-button1 {
+    font-size: 14px;
+    color: #7C3AED;
+    font-weight: 500;
+    width: 221px;
+    height: 54px;
+    padding: 16px 12px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    border: 0.1px solid #cfc4e1;
+    margin-top: 30px;
+}
+
+.productsr-middle-box2 {
+    border: 2.4px solid #7C3AED;
+    background-color: #F5F3FF;
+    border-radius: 22px;
+    width: 295.4px;
+    height: 434px;
+    padding: 34px;
+    margin-right: 1.5%;
+    text-align: left;
+}
+
+.r-pay-button2 {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 221px;
+    height: 54px;
+    padding: 16px 12px;
+    background-color: #7C3AED;
+    border-radius: 40px;
+    /* border: 0.1px solid #cfc4e1; */
+    margin-top: 30px;
+}
+
+.productsr-middle-box1-n2 {
+    padding: 8px 0px;
+    font-size: 18px;
+    color: #7C3AED;
+    font-weight: 600;
+}
+
+.productsr-bottom {
+    margin-left: 28.5%;
+}
+
+
+.productsr-bottom-info {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7C3AED;
+    padding: 18px;
+    width: 60%;
+
+    border-radius: 30px;
+    background-color: #F5F3FF;
+    margin-bottom: 70px;
+}
+
+.r-pay-button1:hover {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    width: 221px;
+    height: 54px;
+    padding: 16px 12px;
+    background-color: #7C3AED;
+    border-radius: 40px;
+    /* border: 0.1px solid #cfc4e1; */
+    margin-top: 30px;
+}
+
+.r-pay-button2:hover {
+    background-color: #8654F6;
+}

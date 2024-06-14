@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.okkyjobs.domain.board.LikeDislikeRepository">
+    <insert id="saveLike" parameterType="com.example.okkyjobs.domain.board.LikeDislike">
+        INSERT INTO like_list (board_code, user_code, is_liked)
+        VALUES (#{boardCode}, 75, #{isLiked})
+    </insert>
+
+    <insert id="saveDislike" parameterType="com.example.okkyjobs.domain.board.LikeDislike">
+        INSERT INTO dislike_list (board_code, user_code, is_disliked)
+        VALUES (#{boardCode}, 75, #{isDisliked})
+    </insert>
+
+    <select id="getLikeCount" resultType="com.example.okkyjobs.domain.board.LikeDislike">
+        SELECT COUNT(*) 
+        FROM like_list
+        WHERE board_code = #{boardCode}
+    </select>
+
+    <select id="getDislikeCount" resultType="com.example.okkyjobs.domain.board.LikeDislike">
+        SELECT COUNT(*)
+        FROM dislike_list
+        WHERE board_code = #{boardCode}
+    </select>
+	
+	<delete id="deleteLike" parameterType="com.example.okkyjobs.domain.board.LikeDislike">
+	    DELETE FROM like_list
+	    WHERE board_code = #{boardCode} AND user_code = #{userCode}
+	</delete>
+	
+	<delete id="deleteDislike" parameterType="com.example.okkyjobs.domain.board.LikeDislike">
+	    DELETE FROM dislike_list
+	    WHERE board_code = #{boardCode} AND user_code = #{userCode}
+	</delete>
+	
+    
+<!--    <update id="updateLikeCount" parameterType="com.example.okkyjobs.domain.board.Board">-->
+<!--	    UPDATE board_mst-->
+<!--	    SET like_code = #{likeCount}-->
+<!--	    WHERE board_code = #{boardCode}-->
+<!--	</update>-->
+	
+<!--	<update id="updateDislikeCount" parameterType="com.example.okkyjobs.domain.board.Board">-->
+<!--	    UPDATE board_mst-->
+<!--	    SET dislike_code = #{dislikeCount}-->
+<!--	    WHERE board_code = #{boardCode}-->
+<!--	</update>-->
+	
+
+<!--    <select id="isLiked" resultType="boolean">-->
+<!--        SELECT COUNT(*) > 0-->
+<!--        FROM like_list-->
+<!--        WHERE board_code = #{boardCode} AND user_code = #{userCode}-->
+<!--    </select>-->
+
+<!--    <select id="isDisliked" resultType="boolean">-->
+<!--        SELECT COUNT(*) > 0-->
+<!--        FROM dislike_list-->
+<!--        WHERE board_code = #{boardCode} AND user_code = #{userCode}-->
+<!--    </select>-->
+    
+    
+<!--     싫어요 삭제 -->
+<!--    <delete id="deleteDislike">-->
+<!--        DELETE FROM dislike_list-->
+<!--        WHERE user_code = #{userCode} AND board_code = #{boardCode}-->
+<!--    </delete>-->
+
+</mapper>

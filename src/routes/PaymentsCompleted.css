@@ -1,0 +1,75 @@
+.paymentscompleted-all a {
+    text-decoration: none;
+
+}
+
+.paymentscompleted-all {
+    margin-top: 8%;
+    text-align: center;
+    margin-left: 33%;
+    width: 510px;
+}
+
+.phone {
+    width: 120px;
+}
+
+.find_talent {
+    margin-top: 50px;
+    padding: 18px 0px;
+    border-top: 1px solid rgb(222, 222, 222);
+    border-bottom: 1px solid rgb(222, 222, 222);
+
+    /* align-items: center; */
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.find_talent span {
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.buy_career {
+    padding: 18px 0px;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    width: 500px;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.buy_career span {
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.paymentscompleted-h1 {
+    margin-top: 20px;
+}
+
+.paymentscompleted-thanks {
+    margin-top: 25px;
+}
+
+.paymentscompleted-thanks span {
+    font-size: 12.8px;
+}
+
+.payments_completed_arrow {
+    width: 20px;
+}
+
+.to-home {
+    margin-top: 30px;
+    padding: 16px 45px;
+    border-radius: 999px;
+    color: #FFFFFF;
+    background-color: #7C3AED;
+    font-size: 14px;
+    margin-bottom: 90px;
+}

@@ -1,0 +1,383 @@
+.talents-code {
+    margin-top: 7rem;
+    display: flex;
+    width: 1200px;
+    margin-left: 8%;
+    margin-bottom: 2500px;
+}
+
+.talents-code-left-in {
+    border: 1px solid rgb(222, 222, 222);
+    border-top: none;
+}
+
+
+.talents-code-scrap-call {
+    /* margin-left: 70px; */
+    color: grey;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.talents-code-left-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    background-color : #7C3AED;
+        
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.talents-code-profile {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    border: 5px solid rgb(222, 222, 222);
+    background-color: #FFFFFF;
+    border-radius: 999px;
+    margin-top: -65px;
+    margin-left: 40px;
+    overflow: hidden;
+
+}
+
+.talents-code-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.talents-code-a-in {
+    margin-left: 180px;
+    margin-top: 8px;
+}
+
+.talents-code-info-in {
+    align-items: center;
+    display: flex;
+}
+
+.talents-code-name-span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.talents-code-contract {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    color: gray;
+}
+
+.talents-code-talentscode-span {
+    margin-left: 8px;
+    font-size: 14px;
+    color: gray;
+}
+
+.talents-code-left {
+    position: relative;
+    width: 59rem;
+    height: 8rem;
+    border: 1px solid rgb(222, 222, 222);
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+.talents-code-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.talents-code-info {
+    display: flex;
+}
+
+.talents-code-scrap img {
+    margin: 20px;
+    height: 24px;
+}
+
+.talents-code-scrap-contact {
+    margin-top: 26px;
+    margin-left: 45px;
+    display: flex;
+}
+
+.talents-code-scrap-contact-call {
+    margin-right: 10px;
+    height: 17px;
+}
+
+.talents-code-scrap-contact-mail {
+    margin-right: 10px;
+    height: 17px;
+}
+
+.talents-code-scrap-mail {
+    color: grey;
+    font-size: 14px;
+}
+
+.talents-code-oneline-introduce {
+    margin-top: 44px;
+    margin-left: 45px;
+}
+
+.talents-code-oneline-introduce-a {
+    font-size: 14px;
+    margin-bottom: 12px;
+    
+}
+
+.talents-code-oneline-introduce-b {
+    margin-bottom: 44px;
+}
+
+.talents-code-b-skill-tag {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.talents-code-b-skill-tag span {
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    background-color: #F3F4F6;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.talents-code-b {
+    border: 1px solid rgb(222, 222, 222);
+    border-top: none;
+    padding: 40px 44px;
+}
+
+.talents-code-b-skill-in {
+    display: flex;
+}
+
+.talents-code-b-skill-year{
+    width: 22.5%;
+    /* margin-right: 80px; */
+}
+
+.talents-code-b-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.talents-code-b-info-div {
+    margin-top: 12px;
+}
+
+.talents-code-b-info {
+    font-size: 14px;
+    color: #6B7280;
+    margin-top: 20px;
+}
+
+.talents-code-b-skill-tag-info {
+    font-size: 14px;
+}
+
+.talents-career {
+    border-top: 1px solid rgb(222, 222, 222);
+    padding: 20px 0px;
+    width: 120%;
+}
+
+.talents-career-first {
+    width: 120%;
+}
+
+.talents-project-first {
+    width: 137.4%;
+}
+
+.talents-project {
+    border-top: 1px solid rgb(222, 222, 222);
+    padding: 20px 0px;
+    width: 137.4%;
+}
+
+
+.lohan {
+    /* column-gap: 5rem; */
+    width: 508px;
+    font-weight: 600;
+}
+
+.talents-code-b-skill-tag-info-detail {
+    margin-top: 10px;
+}
+
+.talents-code-b-skill-tag-info-detail p {
+    margin-top: 5px;
+}
+
+.talents-career-ab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.talents-school-ab {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.talents-career-ab-calendar {
+    width: 18px;
+}
+
+.talents-career-ab-calendar-span {
+    font-size: 14px;
+}
+
+.talents-code-right {
+    margin-left: 40px;
+    margin-right: -100%;
+}
+
+.talents-code-right-box1 {
+    border: 1px solid rgb(222, 222, 222);
+    width: 290px;
+    height: 229.6px;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+.talents-code-right-box2 {
+    margin-top: 10px;
+    border: 1px solid rgb(222, 222, 222);
+    width: 290px;
+    height: 229.6px;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+
+.talents-code-right-box1-img {
+    height: 21px;
+    margin: 0px 8px;
+}
+
+.talents-code-right-box1-a {
+    margin-top: 30px;
+    display: flex;
+    padding: 14px 8px;
+    align-items: center;
+    background-color: #F9FAFB;
+    border-radius: 5px;
+}
+
+.find-people {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.information-a {
+    font-size: 14px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+.talents-code-right-box1-button {
+    margin-top: 20px;
+    padding: 12px 70px;
+    color: #FFFFFF;
+    background-color: #7C3AED;
+    border-radius: 30px;
+}
+
+.talents-code-right-box2-button {
+    margin-top: 14px;
+    padding: 12px 57px;
+    color: #FFFFFF;
+    background-color: #7C3AED;
+    border-radius: 30px;
+}
+
+.talents-code-b-wish-title p {
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.talents-code-b-wish-title {
+    padding: 15px 0px;
+}
+
+
+
+.wish123 {
+    display: flex;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    padding-bottom: 5px;
+    padding-right: 130px;
+}
+
+.wish1 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+.wish2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 130px;
+}
+
+.wish3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wish456 {
+    display: flex;
+    padding-top: 26px;
+}
+
+.wish4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 164px;
+}
+
+.wish5 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 110px;
+}
+
+.wish6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.talents-code-b-introduce-detail {
+    font-size: 14px;
+}
+
+.talents-code-b-introduce-detail p {
+    margin-bottom: 5px;
+}
+
+
+.talents-code-b-end {
+    border: 1px solid rgb(222, 222, 222);
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 40px 44px;
+}
