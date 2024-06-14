@@ -1,0 +1,1743 @@
+
+
+.App4 {
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+    
+  }
+  
+  .App4-App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App4-App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App4-App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App4-App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App4-header-box{
+    margin-top: -2.5%;
+    margin-bottom: 4.5%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: hsla(220, 9%, 46%, .3);
+    background-color: rgb(255 255 255);
+    padding-top: 1.9rem;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  
+    z-index: 20;
+  }
+  
+  .App4-nav-box{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .App4-nav-div1{
+    display: flex;
+    align-items: center;
+  
+    background-color: white;
+    width: 100%;
+    height: 40px;
+
+    padding-bottom: 1.2%;
+    padding-top: 1%;
+    position: relative;
+    position: fixed;
+    z-index: 1;
+  
+  }
+  
+  .App4-head-first-box{
+    display: flex;
+  }
+  
+  .App4-head-logo-box{
+    display: flex;
+    align-items: center;
+  }
+  
+  a{
+    color: #141414;
+    text-decoration: inherit;
+  }
+  
+  .App4-head-logo-span{
+    position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+  }
+  
+  .App4-head-logo{
+    width: auto;
+    height: 1.75rem;
+  
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .App4-head-words-box{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    
+  }
+  
+  .App4-shrink-0{
+    flex-shrink: 0;
+  }
+  
+  .App4-shrink-1{
+    flex-shrink: 0;
+    margin-left: 30px;
+  }
+  
+  .App4-words-box1{
+    color: rgb(17 24 39);
+    font-weight: 500;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.25rem;
+  }
+  
+  .App4-words-box1:hover{
+    color: rgb(80, 80, 251);
+  }
+  
+  .App4-space-x-7{
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.75rem* var(--tw-space-x-reverse));
+      margin-left: calc(1.75rem* calc(1 - var(--tw-space-x-reverse)));
+  }
+  
+  .App4-words-box-space{
+    height: .75rem;
+    width: 1px;
+    background-color: rgb(156 163 175);
+    margin-left: 30px;
+  }
+  
+  
+  
+  .App4-left-margin{
+    margin-left: 30px;
+  }
+  
+  .App4-search-bar{
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: rgb(209 213 219);
+    border-width: 1px;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+  }
+  
+  .App4-search-but{
+    transition-duration: .3s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: -.375rem;
+    margin-top: -.125rem;
+    margin-bottom: -.125rem;
+  }
+  
+  .App4-search-span{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .App4-search-pic{
+    color: rgb(107 114 128);
+    width: .875rem;
+    height: .875rem;
+  
+  }
+  
+  
+  
+  .App4-head-second-box{
+    display: flex;
+    align-items: center;
+    margin-left: 25%;
+  }
+  
+  .App4-head-second-box1{
+    display: flex;
+    margin-right: 0.700rem;
+    column-gap: .25rem;
+  }
+  
+  .App4-buyForShow{
+    color: rgb(17 24 39);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: .375rem 1.25rem;
+    background-color: white;
+    border-color: rgb(209 213 219);
+    border-width: 1px;
+    border-radius: 9999px;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  button, input:where([type=button]), input:where([type=reset]), input:where([type=submit]) {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+  }
+  
+  button, select {
+    text-transform: none;
+  }
+  
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App4-buyForShow:hover{
+    background-color: rgb(191, 187, 187);
+  }
+  
+  .App4-head-third-box{
+    margin-right: 0.5rem;
+  }
+  
+  .App4-company-but{
+    color: rgb(243 244 246);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: .375rem 1.25rem;
+    margin-left: -20%;
+    background-color: rgb(134 84 246);
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 9999px;
+    column-gap: .125rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+  }
+  
+  .App4-company{
+    flex-shrink: 0;
+  }
+  
+  .App4-company-pic{
+    height: 20px;
+
+  }
+
+  
+  .App4-head-forth-box{
+    position: relative;
+  }
+  
+  .App4-profile-but{
+    background-color: rgb(255 255 255);
+    border-radius: 9999px;
+    display: flex;
+    cursor: pointer;
+  
+  }
+  
+  .App4-head-profile-span{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .App4-head-profile{
+    display: flex;
+    flex-shrink: 0;
+  }
+  
+  .App4-profile-part{
+    border-color: hsla(220, 9%, 46%, .3);
+    border-width: 1px;
+    border-radius: 9999px;
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  
+  .App4-navbar {
+    border-bottom: 1px solid rgb(198, 183, 183);
+    position: fixed;
+  
+    top: 9%;
+    width: 100%;
+  
+    font-size: 0;
+    
+    z-index: 20;
+  
+    
+  } 
+  
+  
+  
+  .App4-header {
+  
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 6%;
+  }
+  
+  .App4-header-intern {
+  
+    
+    font-size: 28px;
+    font-weight: 600;
+  
+    letter-spacing: -0.2rem
+  }
+  
+  .App4-header-board p {
+    font-size: 13.5px;
+    font-weight: 500;
+  } 
+  
+  .App4-okky-text {
+    color: #8654f6;
+    font-weight: 600;
+  
+    border-bottom: 1px solid #8654f6;
+  }
+  
+  .App4-header-board span  {
+    font-size: 13.5px;
+    font-weight: 600;
+  }
+  
+  .App4-header-board {
+    display: flex;
+    align-items: center;
+  
+    letter-spacing: -0.09rem;
+    border: 1px solid gray;
+    border: none;
+    background-color: #f5f3ff;
+  
+    margin-top: 1%;
+    
+    width: 50%;
+    height: 100%;
+    padding: 1.3% 10% 1.3% 0%;
+    
+  }
+  
+  
+  .App4-header-board img {
+    width: 40%;
+  
+    margin-left: 40%;
+  }
+  
+  .App4-ceo {
+  
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 4%;
+  
+    font-size: 11px;
+  }
+  
+  .App4-pattern-box {
+    text-align: left;
+  
+    
+    margin-left: 8%;
+  
+  }
+  
+  
+  .App4-pattrn-text {
+    display: flex;
+    justify-content: space-between;
+  
+    margin-right: 40%;
+  }
+  
+  
+  
+  .App4-plus {
+  
+    border: 1px solid rgb(205, 189, 189);
+  
+    margin-top: -4%;
+    margin-left: -4%;
+  
+    width:100%;
+    height: 10%;
+  
+    
+    padding: 6% 10% 6% 10%;
+  
+  }
+  
+  
+  
+  .App4-pattern-box h2 {
+  
+    font-size: 13px;
+    
+  }
+  
+  .App4-upload-text {
+    
+    color: #7c3aed;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+  }
+  
+  .App4-pattern-board {
+    border: 1px solid rgb(205, 189, 189);
+    width: 54%;
+    height: 150px;
+    
+
+    padding: 3% 3% 3% 3%;
+    margin-top: 1%;
+  }
+
+  .App4-pattern-board input {
+
+    display: none;
+  }
+  
+  
+  .App4-pattern-board img:hover {
+    border: 1px solid #7c3aed;
+    color: #7c3aed;
+    cursor: pointer;
+  
+  }
+
+  
+  .App4-upload {
+  
+    text-align: left;
+    line-height: 150%;
+  
+    margin-left: 8%;
+  
+    font-size: 11px;
+    font-weight: 600;
+  
+    letter-spacing: -0.0.1rem;
+  }
+  
+  
+  .App4-pattern-box img {
+    width: 2%;
+  }
+  
+  .App4-project-info {
+    position: relative;
+  
+    text-align: left;
+  
+    margin-left: 8%;
+    margin-top: 3%;
+  }
+  
+  .App4-project-text1 {
+  
+    font-size: 17px;
+    font-weight: 600;
+  }
+  
+  .App4-project-text2 span {
+  
+    color: #0090f9;
+  }
+  
+  .App4-project-text2 {
+  
+    font-size: 14px;
+    
+    line-height: 15%;
+  
+    margin-top: 3%;
+  }
+  
+  .App4-type-select select{
+  
+    border-radius: 7px;
+  
+    width: 850px;
+    height: 40px;
+  
+    cursor: pointer;
+    padding: 0% 0% 0% 1%;
+
+    margin-top: 1%;
+  
+  }
+  
+  
+  .App4-down-button {
+  
+    position: absolute;
+  
+    cursor: pointer;
+    left: 58%;
+    top: 73%;
+  }
+  
+  .App4-job-type  {
+    margin-top: 2%;
+    margin-left: 8%;
+    
+  
+    text-align: left;
+  
+  
+  }
+  .App4-job-type span {
+  
+    color: #0090f9;
+  }
+  
+  .App4-job-check1 {
+  
+    display: flex;
+    align-items: center;
+  
+    padding-left: 8%;
+  
+    margin-top: 1%;
+  
+  }
+  
+  .App4-job-check1 p {
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  
+    text-align: left;
+    margin-left: -20%;
+    padding-right: 30%;
+  }
+  
+  
+  .App4-job-check1 input {
+  
+    height: 1.5rem;
+    width: 25px;
+    margin-left: -30%;
+  
+    cursor: pointer;
+  }
+  
+  .App4-job-check1 div {
+    width: 45px;
+  }
+  
+  .App4-job-check1 img {
+  
+    width: 10px;
+    margin-left: -30%;
+    padding-right: 20%;
+  }
+  
+  .App4-job-move {
+  
+    display: flex;
+    align-items: center;
+  
+    
+  }
+  
+  
+  .App4-project-name {
+  
+    text-align: left;
+  
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+  
+  .App4-pj-all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    margin-right: 40%;
+    margin-top: 1%;
+    white-space: nowrap;
+    
+    
+  }
+  
+  .App4-project-introduce {
+    
+    margin-left: 10%;
+  }
+  
+  .App4-question{
+  
+    width:  25%;
+  }
+  
+  .App4-pj-board input{
+  
+    margin-top: 0.5%;
+  
+    border-radius: 8px;
+    border: 0.5px solid rgb(223, 201, 201);
+  
+    width: 850px;
+    height: 45px;
+  }
+  
+  .App4-pj-intro {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .App4-project-introduce {
+  
+    text-align: left;
+  
+    margin-left: 8%;
+    margin-top: 3%;
+  }
+  
+  .App4-intro-board input{
+    border-radius: 8px;
+    border: 0.5px solid rgb(223, 201, 201);
+  
+  
+    width: 850px;
+    height: 150px;
+  }
+  
+  .App4-position-info {
+  
+    position: relative;
+  
+    text-align: left;
+  
+    margin-left: 8%;
+    margin-top: 1%;
+  
+    display: flex;
+  
+  }
+  
+  .App4-position-text {
+    font-size: 18px;
+    font-weight: 600;
+  
+    text-align: left;
+  
+    margin-top: 3%;
+    margin-left: 8%;
+  }
+  
+  .App4-job-all span {
+  
+    color: #0090f9;
+  }
+  
+  .App4-job-second {
+  
+    margin-left: 3%;
+  
+  }
+  
+  .App4-job-second span {
+    
+    color: #0090f9;
+  }
+  
+  .App4-position-type select {
+    border-radius: 7px;
+  
+    width: 390px;
+    height: 40px;
+  
+    cursor: pointer;
+    margin-top: 2%;
+    padding: 0% 0% 0% 2%;
+  
+  }
+  
+  
+  .App4-position-style select{
+    border-radius: 7px;
+  
+    width: 420px;
+    height: 40px;
+  
+    margin-top: 2%;
+    cursor: pointer;
+    padding: 0% 0% 0% 2%;
+    
+  }
+  
+  .App4-job-check2 {
+  
+    display: flex;
+    align-items: center;
+  
+    margin-top: 1%;
+    font-size: 10px;
+  
+  }
+  
+  .App4-job-check2 input {
+  
+    cursor: pointer;
+  
+  }
+  
+  .App4-job-check2 h2 {
+    font-size: 14px;
+  
+    margin-left: -100%;
+  }
+  
+  
+  .App4-pl-text {
+  
+    margin-left: -0.5%;
+    margin-right: 0.5%;
+  }
+  
+  .App4-reder-text {
+    margin-left: 0.5%;
+    margin-right: -0.5%;
+  }
+  
+  .App4-member-text {
+    margin-left: 0.5%;
+  }
+  .App4-job-check2 input {
+  
+  
+    width: 60px;
+    height: 1.5rem;
+    margin-left: -25%;
+  }
+  
+  .App4-job-duty {
+  
+    text-align: left;
+  
+    margin-top: 3%;
+    margin-left: 8%;
+  }
+  
+  .App4-job-duty span {
+    color: #0090f9;
+  
+  }
+  
+  
+  .App4-job-condition {
+  
+    text-align: left;
+  
+    margin-top: 1.5%;
+    margin-left: 8%;
+  }
+  
+  .App4-job-condition span {
+    color: #0090f9;
+  
+  }
+  .App4-condition-check {
+  
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5%;
+  }
+  
+  .App4-condition-check input {
+  
+    width: 70px;
+    height: 1.5rem;
+    margin-left: -40%;
+  
+    cursor: pointer;
+  }
+  
+  .App4-condition-check h2 {
+  
+    margin-left: -30%;
+    font-size: 14px;
+  }
+  
+  .App4-condition-check div {
+    width: 50px;
+  }
+  
+  .App4-career {
+  
+    text-align: left;
+  
+    display: flex;
+  
+    margin-left: 8%;
+    margin-top: 2%;
+  }
+  
+  .App4-career-text {
+    
+    font-size: 10px;
+  }
+  
+  
+  
+  .App4-min-career {
+    margin-right: 3.5%;
+  }
+  
+  
+  .App4-career-board select{
+    
+    width: 390px;
+    height: 40px;
+  
+    border-radius: 7px;
+    
+    padding-left: 2%;
+    cursor: pointer;
+    margin-top: 1%;
+  }
+  
+  .App4-school-text {
+    font-size: 10px;
+  }
+  
+  .App4-school-board select {
+    
+    
+    width: 420px;
+    height: 40px;
+  
+    border-radius: 7px;
+    
+    padding-left: 2%;
+    cursor: pointer;
+  }
+  
+  .App4-pay {
+    text-align: left;
+  
+    margin-left: 8%;
+  
+    font-size: 10px;
+    margin-top: 2%;
+  }
+  
+  .App4-pay-input {
+  
+    text-align: left;
+  
+    display: flex;
+  
+    margin-left: 8%;
+  
+    font-size: 12px;
+  }
+  
+  .App4-pay-month {
+    display: flex;
+  }
+  
+  .App4-pay-date {
+  
+    display: flex;
+    margin-left: 2%;
+    margin-top: 0%;
+  }
+  
+  .App4-pay-date input {
+  
+    width: 150px;
+    height: 40px;
+  
+  }
+  
+  .App4-pay-text1 {
+  
+    letter-spacing: 0.2rem;
+    font-size: 14px;
+  
+    margin-top: 5%;
+    margin-left: 5%;
+    white-space: nowrap;
+  }
+  .App4-pay-text2 {
+    
+    letter-spacing: 0.2rem;
+    margin-left: 5%;
+    white-space: nowrap;
+  
+    font-size: 14px;
+  }
+  
+  .App4-pay-min {
+  
+  
+    
+  
+    padding: 0% 0% 0% 5%;
+    font-size: 14px;
+  }
+  
+  .App4-pay-month input {
+  
+  
+  
+    border-radius: 7px;
+    border:  0.5px solid rgb(223, 201, 201);
+  }
+  .App4-pay-max {
+    
+    border:  0.5px solid rgb(223, 201, 201);
+    border-radius: 7px;
+  
+  
+    padding: 0% 5% 0% 5%;
+  
+    font-size: 14px;
+    
+  
+  }
+  
+  .App4-working {
+  
+    margin-top: -7.2rem;
+    margin-left: -0.5%;
+  
+    font-size: 14px;
+  
+  }
+  
+  .App4-work-finish {
+    margin-top: 3.4%;
+    margin-left: -21%;
+  
+    font-size: 10px;
+  }
+  
+  .App4-work-d {
+    
+    border: 1px solid gray;
+  
+    margin-left: -17%;
+  
+    padding: 0% 0% 0% 0%;
+  
+    white-space: nowrap;
+  
+    border:  0.5px solid rgb(223, 201, 201);
+    border-radius: 7px;
+  }
+  
+  .App4-work-month input {
+  
+    width: 120px;
+    height: 40px;
+    padding-left: 0.5%;
+  
+    cursor: pointer;
+  }
+  
+  .App4-job-text {
+    margin-left: -5%;
+    margin-top: -1.8%;
+  
+    font-size: 14px;
+    
+  }
+  
+  .App4-work-date {
+    margin-left: 13%;
+    margin-top: -3.5%;
+  }
+  
+  .App4-working-day {
+  
+    margin-right: 4%;
+    font-size: 14px;
+  }
+  
+  .App4-date {
+  
+    
+    border: 0.5px solid rgb(223, 201, 201);
+    border-radius: 8px;
+  
+    margin-left: 4%;
+    line-height: 200%;
+    text-align: left;
+    width: 13%;
+    height: 35px;
+  
+    
+    padding: 0.2% 1% 0.2% 1%;
+  
+    white-space: nowrap;
+  
+    font-size: 14px;
+  }
+  
+  .App4-pay-in {
+  
+    display: flex;
+    justify-content: space-between;
+    
+    margin-left: 8%;
+  
+    font-size: 14px;
+    font-weight: 550;
+    margin-top: 2%;
+  }
+  
+  .App4-pay-intext {
+    display: flex;
+    justify-content: space-evenly;
+  
+    
+  }
+  
+  .App4-end-date {
+  
+    margin-top: 0.3%;
+    margin-right: 49.8%;
+  
+    font-size: 14px;
+  }
+  
+  .App4-money-month select {
+  
+    
+    border-radius: 8px;
+  
+    width: 120px;
+    height: 40px;
+  
+    cursor: pointer;
+  
+    padding-left: 2%;
+  
+    margin-left: 50%;
+  }
+  
+  
+  
+  .App4-money-day select{
+    
+    width: 240px;
+    height: 40px;
+  
+    border-radius: 7px;
+  
+    cursor: pointer;
+  
+    margin-left: 13%;
+  }
+  
+  .App4-money-date {
+    display: flex;
+  
+
+    border-radius: 8px;
+    
+    margin-right: 42.5%;
+    margin-top: -0.5%;
+    white-space: nowrap;
+    padding: 0.5% 2% 0.5% 1%;
+    }
+    
+    .App4-money-date input {
+      
+      width: 220px;
+      height: 35px;
+      border-radius: 8px;
+      padding: 0.5% 4% 0.5% 4%;
+      border: 0.5px solid rgb(223, 201, 201);
+  }
+  
+  
+  
+  .App4-skill {
+  
+    text-align: left;
+    line-height: 200%;
+  
+    margin-left: 8%;
+    margin-top: 3%;
+  }
+  
+  .App4-save-skill {
+  
+    font-size: 14px;
+  
+  }
+  
+  
+  
+  .App4-vertical select{
+  
+    border-radius: 7px;
+  
+    width: 860px;
+    height: 40px;
+  
+    cursor: pointer;
+  }
+  
+  .App4-vertical input {
+    width: 847px;
+    height: 40px;
+    font-size: 13px;
+    padding-left: 1%;
+  }
+
+  .App4-sub {
+  
+    margin-left: 1%;
+  }
+  .App4-skill-text {
+    font-size: 14px;
+  }
+  .App4-area {
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 1.5%;
+    
+    font-size: 10px;
+  }
+  
+  .App4-area-board {
+    position: relative;
+  
+    text-align: left;
+    
+    display: flex;
+    margin-left: 8%;
+  
+  }
+  
+  .App4-special select {
+    
+    border-radius: 7px;
+    cursor: pointer;
+    
+    padding-left: 2%;
+  
+    width: 270px;
+    height: 40px;
+  }
+  
+  
+  
+  
+  .App4-gu select {
+    
+    border-radius: 7px;
+    
+    width: 270px;
+    height: 40px;
+  
+    cursor: pointer;
+    padding-left: 2%;
+  
+    margin-left: 10%;
+  }
+  .App4-dong select{
+    
+    border-radius: 7px;
+  
+    margin-left:20%;
+    cursor: pointer;
+  
+    width: 270px;
+    height: 40px;
+    
+  }
+  
+  
+  
+  .App4-detail {
+  
+    text-align: left;
+    line-height: 200%;
+  
+    margin-top: 2%;
+    margin-left: 8%;
+  }
+  
+ 
+  
+  .App4-manager {
+  
+    text-align: left;
+    margin-left: 8%;
+    margin-top: 4%;
+    
+    font-size: 11px;
+  }
+  
+  .App4-manager-all {
+  
+    font-size: 13.5px;
+    font-weight: 600;
+  
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 1.5%;
+    margin-top: 2.5%;
+  }
+  
+  .App4-ma-name {
+  
+    margin-right: 10%;
+  }
+  .App4-ma-phone {
+    
+    margin-right: 10%;
+    
+  }
+  .App4-ma-email {
+  
+    margin-right: 43%;
+  }
+  
+  .App4-ma-inputbar {
+  
+    display: flex;
+    justify-content: space-around;
+  
+    margin-left: 1%;
+  }
+  
+  .App4-ma-input1 {
+    margin-left: 5%;
+    margin-right: 5%;
+  
+  }
+  .App4-ma-input2 {
+    
+    margin-right: 4.9%;
+  }
+  .App4-ma-input3 {
+    margin-right: 39%;
+  }
+  
+  .App4-ma-input1 input{
+    
+    border-radius: 8px;
+    border: 0.5px solid rgb(215, 209, 209);
+    width: 150%;
+    margin-top: 5%;
+    height: 40px;
+    
+  }
+  
+  .App4-ma-input2 input{
+    border-radius: 8px;
+    border: 0.5px solid rgb(215, 209, 209);
+    margin-top: 5%;
+    width: 150%;
+    height: 40px;
+    
+  }
+  .App4-ma-input3 input{
+    
+    border-radius: 8px;
+    border: 0.5px solid rgb(215, 209, 209);
+    margin-top: 5%;
+    width: 148%;
+    height: 40px;
+  }
+  
+  .App4-bottom-bar {
+    border-bottom: 1px solid gray;
+    width: 58%;
+  
+    margin-left: 7.7%;
+    margin-top: 5%;
+    font-size: 0;
+  }
+  
+  .App4-cancle {
+  
+    margin-top: 2%;
+    margin-right: 35%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .App4-cancle-button {
+    padding: 15% 10% 15% 10%;
+    white-space: nowrap;
+  
+    margin-left: 120%;
+    width: 90px;
+    height: 100%;
+  
+    border-radius: 6px;
+    border: none;
+  
+    background-color: #7c3aed;
+    color: #ffffff;
+  
+  
+    cursor: pointer;
+  }
+  
+  
+  .App4-save-button {
+  
+    padding: 5% 10% 5% 10%;
+    white-space: nowrap;
+  
+    width: 150px;
+    height: 100%;
+  
+    border-radius: 25px;
+    border: none;
+  
+    background-color: rgb(245, 245, 245);
+    
+    cursor: pointer;
+  }
+  
+  .App4-input-button {
+  
+    padding: 3% 10% 3% 10%;
+    white-space: nowrap;
+  
+    width: 150px;
+    height: 100%;
+  
+    border-radius: 25px;
+    border: none;
+  
+    background-color: #7c3aed;
+    opacity: 0.2;
+    
+    cursor: pointer;
+  }
+  
+  .App4-one-button {
+    margin-left: 55%;
+  }
+  
+  .App4-ticket {
+  
+    background-color: #f5f3ff;
+    position: fixed;
+  
+    border: 1px solid gray;
+    border: none;
+    border-radius: 8px;
+  
+    top: 26%;
+    right: 8%;
+  
+    width: 18%;
+    height: 51%;
+  
+  
+    padding-left: 1%;
+    padding-top: 1%;
+    text-align: left;
+  }
+  
+  .App4-pay-ticket {
+  
+    display: flex;
+    border: 1px solid #141414;
+    box-shadow : 0px 2px 5px rgb(217, 201, 201);
+  
+    border-radius: 8px;
+    background-color: #ffffff;
+  
+    margin-top: 5%;
+    padding: 7% 3% 0% 15%;
+    width: 75%;
+    height: 10%;
+
+    font-size: 14px;
+    letter-spacing: -0.05rem;
+  }
+  
+  .App4-pay-ticket span {
+    color: red;
+  }
+  
+  .App4-pay-ticket img {
+    width: 13%;
+    height: 100%;
+  
+    margin-top: -4%;
+    margin-left: -14%;
+    padding-right: 3.5%;
+  }
+  
+  .App4-ticket-copy span {
+  
+    font-weight: 600;
+    letter-spacing: -0.08rem;
+  }
+  
+  .App4-ticket-text1 {
+  
+    margin-top: 5%;
+  
+    letter-spacing: -0.05rem;
+    padding-right: 5%;
+  
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+  }
+  
+  .App4-ticket-text1 span {
+    font-weight: 600;
+  }
+  .App4-ticket-text2 {
+    padding-right: 5%;
+    
+    line-height: 150%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5%;
+    letter-spacing: -0.05rem;
+  }
+  
+  .App4-ticket-text2 span {
+    color: #7c3aed;
+    font-weight: 600;
+  }
+  
+  .App4-ticket-pay button{
+  
+    margin-top: 5%;
+  
+    background-color: #7c3aed;
+    border-radius: 25px;
+  
+    cursor: pointer;
+    width: 93%;
+    height: 50%;
+  
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border: none;
+  
+    font-weight: 600;
+    font-size: 13px;
+    color: #ffffff;
+  }
+  
+  .App4-footer{
+    position: relative;
+  
+    width: 100%;
+    margin: 15% 0px;
+    
+  }
+  
+  .App4-footer-bar {
+  
+    border-bottom: 1px solid rgb(186, 178, 178);
+    width: 100%;
+  
+    color: white;
+  }
+  .App4-footer button {
+    
+    all: unset;
+  }
+  
+  .App4-footer-cat {
+  
+    position: absolute;
+  
+    right: 34%;
+    bottom: 3%;
+  }
+  
+  .App4-footer2 {
+    display: flex;
+    justify-content: space-between;
+  
+    position: relative;
+  
+    margin: -13% 6%;
+  }
+  
+  
+  .App4-facebook {
+    
+    position: absolute;
+    width: 1.5%;
+    left: 2%;
+    bottom: -30px;
+  }
+  
+  .App4-youtube {
+    position: absolute;
+    width: 1.6%;
+    left: 5.5%;
+    bottom: -30px;
+  }
+  
+  .App4-email {
+    position: absolute;
+    width: 1.8%;
+    left: 9%;
+    bottom: -28px;
+  }
+  
+  
+  .App4-footer-logo {
+    margin: 0px 1%;
+  }
+  
+  .App4-ok-logo {
+    width: 80%;
+  }
+  
+  
+  .App4-footer-logo h2 {
+    font-size: 13px;
+    margin-top: -1%;
+  }
+  
+  
+  
+  
+  
+  .App4-footer-middle {
+  
+    position: relative;
+  
+    
+    
+  }
+  
+  .App4-button-one {
+    position: absolute;
+  
+    left: 23%;
+    bottom: -160px;
+  }
+  
+  
+  .App4-button-two {
+    position: absolute;
+  
+    left: 28%;
+    bottom: -160px;
+  }
+  
+  .App4-button-three {
+    position: absolute;
+  
+    left: 33%;
+    bottom: -158px;
+  }
+  
+  .App4-button-four {
+    position: absolute;
+  
+    left: 36%;
+    bottom: -159px;
+  }
+  
+  .App4-button-five {
+    position: absolute;
+  
+    left: 46%;
+    bottom: -158px;
+  }
+  
+  
+  .App4-footer-middle button {
+    all: unset;
+  
+    font-size: 14px;
+  
+  
+  }
+  
+  
+  .App4-footer-text {
+  
+    
+    position: relative;
+    font-size: 12px;
+    
+    
+  }
+  
+  .App4-text-one {
+    position: absolute;
+  
+    left: 23%;
+    bottom: -210px;
+  }
+  
+  .App4-text-two {
+    position: absolute;
+  
+    left: 23%;
+    bottom: -235px;
+  }
+  
+  .App4-text-three {
+    position: absolute;
+  
+    left: 23%;
+    bottom: -260px;
+  }
+  
+  .App4-text-four {
+    position: absolute;
+  
+    left: 23%;
+    bottom: -280px;
+  }
+  
+  .App4-last-footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  
+    position: relative;
+  }
+  
+  .App4-sponse {
+    position: absolute;
+  
+    left: 85%;
+    bottom: -150px;
+  }
+  
+  .App4-sponse h2 {
+    font-size: 14px;
+  }
+  
+  .App4-iname {
+    position: absolute;
+  
+    left: 80%;
+    bottom: -200px;
+  }
+  
+  .App4-ncloud {
+    position: absolute;
+  
+    left: 87%;
+    bottom: -193px;
+  }
+  
+  .App4-last-footer img {
+    width: 5%;
+  }

@@ -1,0 +1,1451 @@
+.App5 {
+    text-align: center;
+  }
+  
+  .App5-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App5-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .App5-header-box{
+    margin-top: -1.5%;
+    margin-bottom: 4.5%;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-color: hsla(220, 9%, 46%, 3);
+    background-color: rgb(255 255 255);
+    padding-top: 1.25rem;
+    padding-bottom: 0rem;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+  
+    z-index: 20;
+  }
+  
+  .App5-nav-box{
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 80rem;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  
+  .App5-nav-div1{
+    display: flex;
+    align-items: center;
+  
+    background-color: white;
+    width: 100%;
+  
+    padding-top: 1%;
+    padding-bottom: 1.2%;
+    position: relative;
+    position: fixed;
+    z-index: 1;
+  
+  }
+  
+  .App5-head-first-box{
+    display: flex;
+  }
+  
+  .App5-head-logo-box{
+    display: flex;
+    align-items: center;
+  }
+  
+  a{
+    color: #0090f9;
+    text-decoration: inherit;
+  }
+  
+  .App5-head-logo-span{
+    position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+  }
+  
+  .App5-head-logo{
+    width: auto;
+    height: 1.75rem;
+  
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+    vertical-align: middle;
+  }
+  
+  .App5-head-words-box{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    
+  }
+  
+  .App5-shrink-0{
+    flex-shrink: 0;
+  }
+  
+  .App5-shrink-1{
+    flex-shrink: 0;
+    margin-left: 30px;
+  }
+  
+  .App5-words-box1{
+    color: rgb(17 24 39);
+    font-weight: 500;
+    position: relative;
+    font-size: 13px;
+    line-height: 1.25rem;
+  }
+  
+  .App5-words-box1:hover{
+    color: rgb(80, 80, 251);
+  }
+  
+  .App5-space-x-7{
+    --tw-space-x-reverse: 0;
+      margin-right: calc(1.75rem* var(--tw-space-x-reverse));
+      margin-left: calc(1.75rem* calc(1 - var(--tw-space-x-reverse)));
+  }
+  
+  .App5-words-box-space{
+    height: .75rem;
+    width: 1px;
+    background-color: rgb(156 163 175);
+    margin-left: 30px;
+  }
+  
+  
+  
+  .App5-left-margin{
+    margin-left: 30px;
+  }
+  
+  .App5-search-bar{
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .15s;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-color: rgb(209 213 219);
+    border-width: 1px;
+    border-radius: 43px;
+    display: flex;
+    align-items: center;
+    height: 35px;
+  }
+  
+  .App5-search-but{
+    transition-duration: .3s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-right: -.375rem;
+    margin-top: -.125rem;
+    margin-bottom: -.125rem;
+  }
+  
+  .App5-search-span{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .App5-search-pic{
+    color: rgb(107 114 128);
+    width: .875rem;
+    height: .875rem;
+  
+  }
+  
+  
+  
+  .App5-head-second-box{
+    display: flex;
+    align-items: center;
+    margin-left: 22%;
+  }
+  
+  .App5-head-second-box1{
+    display: flex;
+    margin-right: .5rem;
+    column-gap: .25rem;
+  }
+  
+  .App5-buyForShow{
+    color: rgb(17 24 39);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: .375rem 1.25rem;
+    background-color: white;
+    border-color: rgb(209 213 219);
+    border-width: 1px;
+    border-radius: 9999px;
+    display: flex;
+    cursor: pointer;
+  }
+  
+  button, input:where([type=button]), input:where([type=reset]), input:where([type=submit]) {
+    -webkit-appearance: button;
+    background-color: transparent;
+    background-image: none;
+  }
+  
+  button, select {
+    text-transform: none;
+  }
+  
+  button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App5-buyForShow:hover{
+    background-color: rgb(191, 187, 187);
+  }
+  
+  .App5-head-third-box{
+    margin-right: 1.5rem;
+  }
+  
+  .App5-company-but{
+    color: rgb(243 244 246);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: .375rem 1.25rem;
+    background-color: rgb(134 84 246);
+    border-color: transparent;
+    border-width: 1px;
+    border-radius: 9999px;
+    column-gap: .125rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  
+  }
+  
+  .App5-company{
+    flex-shrink: 0;
+  }
+  
+  .App5-company-pic{
+    height: 20px;
+  }
+  
+  .App5-head-forth-box{
+    position: relative;
+  }
+  
+  .App5-profile-but{
+    background-color: rgb(255 255 255);
+    border-radius: 9999px;
+    display: flex;
+    cursor: pointer;
+  
+  }
+  
+  .App5-head-profile-span{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  .App5-head-profile{
+    display: flex;
+    flex-shrink: 0;
+  }
+  
+  .App5-profile-part{
+    border-color: hsla(220, 9%, 46%, .3);
+    border-width: 1px;
+    border-radius: 9999px;
+    width: 2rem;
+    height: 2rem;
+    
+  }
+  
+  .App5-navbar {
+    border-bottom: 1px solid rgb(198, 183, 183);
+    position: fixed;
+  
+    top: 9%;
+    width: 100%;
+  
+    font-size: 0;
+    
+    z-index: 20;
+  
+    
+  }
+  
+  
+  .App5-top-main {
+  
+    position: relative;
+  }
+  
+  .App5-top-bar {
+    
+    border-top: 1px solid gray;
+    width: 60%;
+  
+    margin-top: 8%;
+    margin-left: 8%;
+  
+    font-size: 0;
+  }
+  
+  .App5-top-text {
+    
+  
+    position: absolute;
+  
+    left: 9.4%;
+    top: -10px;
+  
+    font-size: 9px;
+  
+    border: 1px solid white;
+    background-color: white;
+    
+    width: 3.5%;
+    
+  }
+  
+  .App5-header {
+  
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  
+    margin: 2.8% 7.8%;
+  }
+  
+  .App5-header-div {
+    line-height:  150%;
+    text-align: left;
+    font-weight: 100;
+    color: #374151;
+  }
+  
+  
+  .App5-header img {
+    width: 90%;
+  }
+  
+  .App5-header h2 {
+    font-size: 14px;
+  
+  }
+  
+  .App5-view {
+    margin-top: 110%;
+    margin-left: 20%;
+  }
+  
+  .App5-header-right {
+    display: flex;
+    align-items: center;
+  
+    margin-left: 41%;
+  }
+  
+ 
+  
+  .App5-header-title {
+    text-align: left;
+    line-height: 150%;
+    margin: 0px 8.5%;
+  
+  }
+  
+  .App5-title-top {
+    display: flex;
+   
+    margin-left: 0.5%;
+  
+    font-size: 12px;
+  }
+  
+  .App5-title-si {
+    border: 1px solid #f9fafb;
+    border-radius: 15px;
+    padding: 0.1% 0.3%;
+  }
+  
+  .App5-title-money {
+    margin-left: 1%;
+    border: 1px  solid #f9fafb;
+    border-radius: 15px;
+    padding: 0.1% 0.3%;
+  }
+  
+  .App5-title-bottom {
+    display: flex;
+    font-size: 13px;
+  }
+  
+  .App5-title-bottom img {
+    width: 84%;
+  
+  }
+  
+  .App5-close-day {
+    margin-left: 0.3%;
+  }
+  
+  .App5-close-text {
+    margin-left: 0.3%;
+    color: #8654f6;
+  
+  }
+  
+  .App5-middle-border {
+  display: flex;
+
+  
+  position: relative;
+  
+  margin-top: 5%;
+  
+  line-height: 200%;
+  }
+  
+  .App5-job-day {
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
+    border-radius: 5px;
+  
+    padding: 2% 7.5% 1% 2%;
+  }
+  
+  .App5-job-day h2 {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  
+  .App5-jobday-img {
+    position: absolute;
+  
+    left: 2%;
+    top: 62%;
+  }
+  
+  .App5-job-day img {
+    width: 50%;
+  }
+  
+  .App5-job-pay {
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
+    border-radius: 5px;
+  
+    padding: 2% 10% 1% 3%;
+    margin-left: 2.5%;
+  }
+  
+  .App5-job-pay h2 {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  
+  .App5-jobpay-img {
+    position: absolute;
+  
+    left: 22.4%;
+    top: 64%;
+  }
+  
+  .App5-job-pay img {
+    width: 15px;
+  }
+  
+  .App5-job-area {
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
+    border-radius: 5px;
+  
+    padding: 2% 7% 1% 3%;
+    margin-left: 2.5%;
+  }
+  
+  .App5-job-area h2 {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  
+  .App5-jobarea-img {
+    position: absolute;
+  
+    left: 47.4%;
+    top: 62%;
+  }
+  
+  .App5-job-area img {
+    width: 14px;
+  }
+  
+  .App5-category {
+    
+    display: flex;
+    white-space: nowrap;
+  
+    font-size: 10px;
+  
+    margin-top: 3%;
+  }
+  
+  .App5-position-text {
+    display: flex;
+  
+    border-bottom: 1px solid gray;
+    width: 32%;
+  
+  }
+  
+  .App5-position-h1 {
+    
+    font-size: 15px;
+    margin-left: 14.5%;
+    margin-top: -0.5%;
+
+    padding-bottom: 2%;
+  
+    font-weight: 500;
+    
+    color: #8654f6;
+  }
+  
+  .App5-position-text2 {
+    display: flex;
+  
+    margin-left: 5%;
+    border-bottom: 1px solid gray;
+    width: 32%;
+  
+  }
+  
+  .App5-position-h2 {
+  
+    margin-left: 15%;
+  
+    font-weight: 100;
+  }
+  
+  .App5-category2 {
+    display: flex;
+    white-space: nowrap;
+  
+    font-size: 10px;
+  
+  }
+  
+  .App5-career-text {
+    display: flex;
+  
+    border-bottom: 1px solid gray;
+    width: 32%;
+  }
+  
+  .App5-career-h1 {
+  
+    margin-left: 15%;
+  
+    font-weight: 100;
+  }
+  
+  
+  .App5-school-text {
+    display: flex;
+  
+    border-bottom: 1px solid gray;
+    width: 32%;
+  
+    margin-left: 5%;
+  }
+  
+  .App5-school-h2 {
+    margin-left: 15%;
+  
+    font-weight: 100;
+  }
+  
+  .App5-category3 {
+    display: flex;
+    white-space: nowrap;
+  
+    font-size: 10px;
+  
+  }
+  
+  .App5-job-style-text {
+  
+    display: flex;
+  
+    border-bottom: 1px solid gray;
+    width: 32%;
+  
+  }
+  
+  .App5-job-h1 {
+    margin-left: 15%;
+  
+    font-weight: 100;
+  }
+  
+  .App5-payday-text {
+    display: flex;
+  
+    border-bottom: 1px solid gray;
+    width: 32%;
+    margin-left: 5%;
+  }
+  
+  .App5-payday-h2 {
+    margin-left: 11%;
+  
+  
+    font-weight: 100;
+  }
+  
+  .App5-category4 {
+    display: flex;
+    white-space: nowrap;
+  
+    font-size: 10px;
+  }
+  
+  .App5-skill-text {
+    display: flex;
+  
+    border-bottom: 1px solid gray;
+    width: 32%;
+  }
+  
+  .App5-skill-h2 {
+    margin-left: 15%;
+  
+  
+    font-weight: 100;
+    color: #8654f6;
+  }
+  
+  .App5-fixed {
+    position: relative;
+  }
+  
+  .App5-fixed-box {
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 10px;
+    
+    padding: 1.5% 13% 2% 1.7%;
+    width: 5%;
+    
+    position: absolute;
+    position: fixed;
+  
+    
+    
+    
+    top: 16%;
+    right: 3%;
+  }
+  
+  .App5-fixed-h1 {
+    font-size: 14px;
+    font-weight: 550;
+    padding-left: 45%;
+  
+  }
+  
+  .App5-fixed-name {
+    display: flex;
+  
+  
+  }
+  
+  .App5-fixed-name img {
+    position: absolute;
+  
+    right: 80%;
+    top: 11%;
+  
+    width: 11%;
+  }
+  
+  .App5-fixed-resume {
+  
+    display: flex;
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
+  
+    padding: 0% 55% 3% 40%;
+    margin-top: 30%;
+  
+    width: 220%;
+    font-size: 8px;
+  
+    color: gray;
+  }
+  
+  .App5-fixed-resume img {
+  position: absolute;
+  
+    right: 83%;
+    top: 38.5%;
+    width: 4.5%;
+  }
+  
+  .App5-fixed-input button {
+  
+    border: none;
+    border-radius: 25px;
+    
+  
+    padding: 13% 15% 13% 5%;
+  
+    width: 320%;
+  
+    color: #f9fafb;
+    background-color: #8654f6;
+  
+    margin-top: 35%;
+  
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .App5-fixed2 {
+    position: relative;
+  
+  }
+  
+  .App5-fixed-box2 {
+    border: 1px solid rgb(175, 174, 174);
+    border-radius: 10px;
+  
+    padding: 1.5% 0% 2% 1.7%;
+    width: 18%;
+  
+    position: absolute;
+    position: fixed;
+    z-index: 2000;
+    
+    
+    
+    top: 55%;
+    right: 3%;
+    
+    
+    
+  }
+  
+  .App5-fixed-h3 {
+    font-size: 14px;
+    font-weight: 550;
+  
+    padding-left: 1px;
+  
+    white-space: nowrap;
+  }
+  
+  .App5-fixed-name2 {
+    display: flex;
+  
+  
+  }
+  
+  .App5-fixed-name2 img {
+    position: absolute;
+  
+    right: 80%;
+    top: 5%;
+  
+    width: 11%;
+  }
+  
+  .App5-fixed-resume2 {
+  
+    display: flex;
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
+  
+    padding: 2% 5% 3% 14%;
+    margin-top: 5%;
+  
+    width: 70%;
+    font-size: 9px;
+  
+    color: gray;
+  
+  }
+  
+  .App5-fixed-resume2 img {
+  position: absolute;
+  
+    right: 83%;
+    top: 38%;
+    width: 5.5%;
+  }
+  
+  .App5-fixed-input2 button {
+  
+    border: none;
+    border-radius: 25px;
+    
+  
+    padding: 4% 5% 4% 5%;
+  
+    width: 90%;
+  
+    color: #f9fafb;
+    background-color: #8654f6;
+  
+    margin-top: 8%;
+  
+    font-size: 14px;
+    font-weight: 100;
+  }
+  
+  .App5-project {
+    margin-top: 4%;
+    margin-left: 8.5%;
+  
+    text-align: left;
+  }
+  
+  .App5-card {
+    margin-top: 2%;
+    margin-left: 8.5%;
+  
+    text-align: left;
+  }
+  
+  .App5-text-blue {
+    margin-top: 2%;
+    margin-left: 8.5%;
+  
+    text-align: left;
+  }
+  
+  .App5-text-developer {
+    margin-top: 2%;
+    margin-left: 8.5%;
+  
+    text-align: left;
+  }
+  
+  .App5-middle-text {
+    margin-top: 4%;
+    margin-left: 8.5%;
+  
+    text-align: left;
+    line-height: 200%;
+  }
+  
+  .App5-middle-text2 {
+    margin-top: 1.5%;
+    margin-left: 9.3%;
+  
+    text-align: left;
+    line-height: 200%;
+  }
+  
+  .App5-middle-text3 {
+    margin-top: 1.5%;
+    margin-left: 9.3%;
+  
+    text-align: left;
+    line-height: 200%;
+  }
+  .App5-middle-text4 {
+    margin-top: 5.5%;
+    margin-left: 9.3%;
+  
+    text-align: left;
+    line-height: 300%;
+  
+    font-size: 14px;
+  }
+  
+  .App5-like {
+    position: relative;
+  
+    margin-top: 2%;
+  }
+  
+  .App5-likes {
+  
+    position: absolute;
+  
+  
+    left: 59.5%;
+    bottom: -30px;
+  }
+  
+  .App5-likes img {
+    width: 80%;
+  }
+  
+  .App5-like-count {
+    position: absolute;
+  
+    left: 61.8%;
+    bottom: -30px;
+  }
+  
+  .App5-unlike {
+  
+    position: absolute;
+  
+  
+    left: 63.3%;
+    bottom: -30px;
+  }
+  
+  .App5-unlike img {
+    width: 80%;
+  
+  }
+  
+  .App5-unlike-count {
+    position: absolute;
+    
+    left: 65.5%;
+    bottom: -30px;
+  }
+  
+  .App5-main {
+  
+    display: flex;
+    position: relative;
+  
+    margin: 2% 9%;
+    margin-top: 2%;
+  
+  
+  }
+  
+  .App5-main-border {
+    border-bottom: 1px solid gray;
+    
+    font-size: 0px;
+    margin-top: 9%;
+    margin-left: 9%;
+  
+    width: 57.3%;
+  }
+
+  .App5-manager {
+    margin-top: 1.5%;
+  }
+  
+  .App5-maneger-info {
+    display: flex;
+    
+    border: 1px solid #f9fafb;
+    background-color: #f9fafb;
+    width: 63%;
+    height: 60px;
+    margin-left: 3%;
+  }
+  
+  .App5-main-people {
+    white-space: nowrap;
+    padding-left: 7%;
+    padding-top: 2%;
+    }
+  
+  .App5-main-hp {
+    white-space: nowrap;
+    padding-left: 11%;
+    padding-top: 2%;
+  }  
+  .App5-main-email {
+    padding-left: 10%;
+    padding-top: 2%;
+  }  
+  
+  .App5-person-img {
+  
+    position: absolute;
+  
+    left: 9%;
+    bottom: 40%;
+  
+  }
+  
+  .App5-person-img img {
+    width: 65%;
+  }
+  
+  .App5-call-img {
+  
+    position: absolute;
+  
+    left: 22%;
+    bottom: 40%;
+  }
+  
+  .App5-call-img img {
+    width: 80%;
+  }
+  
+  .App5-email-img {
+  
+    position: absolute;
+  
+    left: 36.5%;
+    bottom: 40%;
+  }
+  
+  .App5-email-img img {
+    width: 80%;
+  }
+  
+  .App5-bottom {
+    border: 1px solid rgb(193, 191, 191);
+    border-radius: 6px;
+  
+    position: relative;
+    font-size: 14px;
+    width: 57.5%;
+    height: 500px;
+  
+    margin-left: 9%;
+    margin-top: 4%;
+  }
+  
+  .App5-bottom-main {
+    display: flex;
+  
+    margin-top: 5%;
+    margin-left: 13.5%;
+  
+    white-space: nowrap;
+  }
+  
+  .App5-bottom-main p {
+  
+    font-size: 14px;
+    margin-top: 3%;
+    margin-right: 8%;
+    color: gray;
+  }
+  
+  .App5-bottom-main img {
+    position: absolute;
+    
+    left: 3%;
+    bottom: 78.5%;
+  
+    width: 9%;
+    height: 15%;
+  }
+  
+  .App5-area-img img{
+    width: 2%;
+    height: 3%;
+  
+    margin-left: 11%;
+    margin-bottom: 1.5%;
+  }
+  
+  .App5-office-type {
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 7px;
+  
+    width: 18%;
+    height: 10%;
+    padding: 1% 3.5% 1% 2%;
+    margin-left: 43%;
+    margin-top: 2%;
+  
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .App5-office-type img {
+    width: 2%;
+    height: 4%;
+  
+    margin-left: 89%;
+    margin-bottom: 2%;
+  }
+  
+  .App5-bottom-text {
+    margin-top: 5%;
+    margin-left: 4%;
+  
+    text-align: left;
+    line-height: 250%;
+  
+    font-size: 9px;
+    padding-right: 5%;
+  
+    letter-spacing: -0.02rem;
+  
+    font-size: 14px;
+  
+  }
+  
+  .App5-bottom-text span {
+  
+    font-weight: 600;
+  }
+  
+  .App5-bottom-text p {
+  
+    border-bottom: 1px solid rgb(205, 188, 188);
+  
+    padding-bottom: 6%;
+  }
+  .App5-text-footer {
+    display: flex;
+  
+    position: relative;
+  }
+  
+  .App5-footer-img {
+    position: absolute;
+  
+    left: 9%;
+    bottom: 48%;
+  }
+  
+  .App5-botoom-url {
+  
+    display: flex;
+  
+    margin-top: 3%;
+    margin-left: 4%;
+  
+    color: #8654f6;
+    font-weight: 600;
+  }
+  
+  .App5-botoom-url img {
+  
+    width: 2%;
+    height: 5%;
+  
+    margin-right: 1%;
+    
+  }
+  
+  
+  .App5-text-box {
+    margin-top: 8%;
+    margin-left: 12%;
+  
+    border: 1px solid rgb(196, 188, 188);
+  
+  
+    padding: 5% 10% 5% 1%;
+  
+    font-size: 12px;
+  }
+  
+  .App5-last-footer {
+    margin-top: 1%;
+    margin-right: 33%;
+  
+  }
+  
+  .App5-last-footer button {
+    padding: 0.8% 1% 0.5% 1%;
+  
+    
+    background-color: #0090f9;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+  
+  
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    white-space: nowrap;
+  
+    opacity: 0.3;
+    }
+    
+  
+    .App5-footer{
+      position: relative;
+    
+      width: 120%;
+      margin: 15% -6%;
+    
+    }
+    
+    .App5-footer-bar {
+    
+      border-bottom: 1px solid rgb(186, 178, 178);
+      width: 90%;
+    
+      font-size: 0;
+    }
+    .App5-footer button {
+      
+      all: unset;
+    }
+    
+    .App5-footer-cat {
+    
+      position: absolute;
+    
+      right: 34%;
+      bottom: 3%;
+    }
+    
+    .App5-footer2 {
+      display: flex;
+      justify-content: space-between;
+    
+      position: relative;
+    
+      margin: -13% 6%;
+    }
+    
+    
+    .App5-facebook {
+      
+      position: absolute;
+      width: 1.5%;
+      left: 2%;
+      bottom: -30px;
+    }
+    
+    .App5-youtube {
+      position: absolute;
+      width: 1.6%;
+      left: 5.5%;
+      bottom: -30px;
+    }
+    
+    .App5-email {
+      position: absolute;
+      width: 1.8%;
+      left: 9%;
+      bottom: -28px;
+    }
+    
+    
+    .App5-footer-logo {
+      margin: 0px 1%;
+    }
+    
+    .App5-ok-logo {
+      width: 80%;
+    }
+    
+    
+    .App5-footer-logo h2 {
+      font-size: 13px;
+      margin-top: -1%;
+    }
+    
+    
+    
+    
+    
+    .App5-footer-middle {
+    
+      position: relative;
+    
+      
+      
+    }
+    
+    .App5-button-one {
+      position: absolute;
+    
+      left: 23%;
+      bottom: -160px;
+    }
+    
+    
+    .App5-button-two {
+      position: absolute;
+    
+      left: 28%;
+      bottom: -160px;
+    }
+    
+    .App5-button-three {
+      position: absolute;
+    
+      left: 33%;
+      bottom: -158px;
+    }
+    
+    .App5-button-four {
+      position: absolute;
+    
+      left: 36%;
+      bottom: -159px;
+    }
+    
+    .App5-button-five {
+      position: absolute;
+    
+      left: 46%;
+      bottom: -158px;
+    }
+    
+    
+    .App5-footer-middle button {
+      all: unset;
+    
+      font-size: 14px;
+    
+    
+    }
+    
+    
+    .App5-footer-text {
+    
+      
+      position: relative;
+      font-size: 12px;
+      
+      
+    }
+    
+    .App5-text-one {
+      position: absolute;
+    
+      left: 23%;
+      bottom: -210px;
+    }
+    
+    .App5-text-two {
+      position: absolute;
+    
+      left: 23%;
+      bottom: -235px;
+    }
+    
+    .App5-text-three {
+      position: absolute;
+    
+      left: 23%;
+      bottom: -260px;
+    }
+    
+    .App5-text-four {
+      position: absolute;
+    
+      left: 23%;
+      bottom: -280px;
+    }
+    
+    .App5-last-footer {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    
+      position: relative;
+    }
+    
+    .App5-sponse {
+      position: absolute;
+    
+      left: 85%;
+      bottom: -150px;
+    }
+    
+    .App5-sponse h2 {
+      font-size: 14px;
+    }
+    
+    .App5-iname {
+      position: absolute;
+    
+      left: 80%;
+      bottom: -200px;
+    }
+    
+    .App5-ncloud {
+      position: absolute;
+    
+      left: 87%;
+      bottom: -193px;
+    }
+    
+    .App5-last-footer img {
+      width: 5%;
+    }
