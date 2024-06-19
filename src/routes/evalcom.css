@@ -70,10 +70,6 @@
     text-decoration: none;
 }
 
-.search-right {
-  display: flex;
-  align-items: center;
-}
 .search-right span {
   font-size: 14px;
   color: #4B5563;
@@ -87,7 +83,6 @@
 }
 
 .post-sequence-button {
-  display: flex;
     font-size: 14px;
     font-weight: 500;
     color: #111827;

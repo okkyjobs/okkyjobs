@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 import './ArticlesDetail.css';
-import { createComment, getComments } from '../api/apiService';
-// import { getAllBoards } from '../api/apiService';
-import { getBoardByCode, saveLike, saveDislike, updateBoardView, getAllComments } from '../api/apiService';
+import { createComment } from '../api/apiService';
+import { getAllBoards } from '../api/apiService';
+import { getBoardByCode, saveLike, saveDislike, updateBoardView } from '../api/apiService';
 
 
 function ArticlesDetail() {
-  const navigate = useNavigate();
+
   const { boardCode } = useParams();
-  // const { appliedCode } = useParams();
+  const { appliedCode } = useParams();
+  // const userCode = 75;
   const { userCode } = useParams();
   const [board, setBoard] = useState(null);
   const [likeCount, setLikeCount] = useState(0);
@@ -19,29 +19,13 @@ function ArticlesDetail() {
   const [isDisliked, setIsDisliked] = useState(false);
   const [viewCount, setViewCount] = useState(0);
   const [appliedText, setAppliedText] = useState("");
-  const [comments, getComments] = useState([]);
   // const [applyedText, setApplyedText] = useState('');
-  const [modal, setModal] = useState(false);
-  const [deletevalue, setDeletevalue] = useState('');
-
-  const Modal = (e) => {
-    setModal(!modal);
-  };
-
-  const handleDelete = () => {
-    console.log("Deleting...");
-  };
-
 
 
   useEffect(() => {
     const fetchBoard = async () => {
-      // const data2 = await getAllComments();
-      // getComments(data2);
-      // console.log(data2);
       try {
         const data = await getBoardByCode(boardCode);
-        // const data2 = await getComments(boardCode);
         setBoard(data);
         setLikeCount(data.likeCount);
         setDislikeCount(data.dislikeCount);
@@ -53,16 +37,14 @@ function ArticlesDetail() {
       }
     };
     fetchBoard();
-  }, [boardCode], [modal]);
+  }, [boardCode]);
 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(appliedText);
     try {
-      const data = await createComment(boardCode, {userCode : userCode, boardCode: boardCode, appliedText : appliedText });
+      await createComment(boardCode, {userCode : userCode, boardCode: boardCode, appliedText : appliedText });
       setAppliedText('');
-      console.log(data);
       alert('댓글이 성공적으로 생성되었습니다.');
     } catch (error) {
       console.error('댓글 생성 중 오류 발생:', error);
@@ -71,7 +53,7 @@ function ArticlesDetail() {
   };
 
   useEffect(() => {
-    // console.log(appliedText);
+    console.log(appliedText);
   }, [handleSubmit]);
 
 
@@ -222,32 +204,8 @@ function ArticlesDetail() {
                   <div className='scrap'>
                     <img src={require('./img/scrap.jpg')}/>
                   </div>
-                  <div className='modify' onClick={Modal}>
+                  <div className='modify'>
                     <img src={require('./img/modify.jpg')}/>
-                {modal && (
-                  <div style={{
-                    position: 'absolute',
-                    border: "1px solid #d3d3d3",
-                    background: "#ffffff",
-                    borderRadius: "6px",
-                    width: "100px",
-                    height: "84px",
-                    lineHeight: "200%",
-                    textAlign: "center",
-                    marginLeft: "-5%",
-                    marginTop: "1%",
-                    padding: "10px",
-                    zIndex: 1000
-                  }}>
-                    <button className='modal-text1' type="button" onClick={() => navigate('./edit')} style={{
-                      fontSize: "14px",
-                      cursor: "pointer"
-                    }}>수정하기</button>
-                    <button className='modal-text2' onClick={handleDelete} style={{
-                      fontSize: "14px",
-                    }}>삭제하기</button>
-                  </div>
-                )}
                   </div>
                 </div>
               </div>
@@ -290,8 +248,8 @@ function ArticlesDetail() {
             </div>
           </div>
 
-          {comments.map((comments) => (
-          <div key={comments.boardCode}  className='bottom'>
+
+          <div className='bottom'>
             <div className='comment-profile'>
                 <div className='comment-a'>
                   <div className='comment-profile-img'>
@@ -299,7 +257,7 @@ function ArticlesDetail() {
                   </div>
                   
                   <div className='comment-profile-info'>
-                    <div className='comment-profile-info-name'>{comments.userNickname}</div>
+                    <div className='comment-profile-info-name'>박댓글</div>
                     <div className='comment-profile-info-date-view'>
                       <div className='comment-profile-info-date'>1일 전</div>
                     </div>
@@ -321,12 +279,10 @@ function ArticlesDetail() {
 
             </div>
             <div className='read-comment-box'>
-              <span className='read-comment'>{comments.appliedText}</span>
+              <span className='read-comment'>댓글 보여줄 곳</span>
             </div>
 
           </div>
-      ))}
-          
 
           <div className='bottom-on'>
           <div className='bottom'>

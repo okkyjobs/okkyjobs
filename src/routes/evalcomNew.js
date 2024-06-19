@@ -46,6 +46,7 @@ function EvalcomNew() {
       });
       navigate('/evalcom');
       alert('게시물이 성공적으로 생성되었습니다.');
+      // 폼 초기화
     } catch (error) {
       console.error('게시판 생성 중 오류 발생:', error);
       alert('게시물 생성에 실패했습니다.');

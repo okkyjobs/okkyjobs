@@ -150,13 +150,11 @@
   }
   
   .like {
-    display: flex;
     margin-left: 6px;
     align-items: center;
   }
   
   .unlike {
-    display: flex;
     margin-left: 6px;
     align-items: center;
   }

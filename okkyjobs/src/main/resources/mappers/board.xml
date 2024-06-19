@@ -56,17 +56,6 @@
         WHERE 
             bm.board_code = #{boardCode}
     </select>
-    
-    <update id="updateBoardByCode" parameterType="com.example.okkyjobs.domain.board.BoardRepository">
-	    UPDATE board_mst
-	    SET board_title = #{boardTitle},
-	        board_text = #{boardText},
-	        board_tag = #{boardTag},
-	        update_date = NOW()
-	    WHERE board_code = #{boardCode}
-	</update>
-    
-    
   
     
 <!--	    댓글 작성-->
@@ -76,9 +65,9 @@
 <!--    </insert>-->
     
 <!--	    댓글 조회-->
-<!--    <select id="selectApplied" resultType="com.example.okkyjobs.web.dto.BoardDTO">-->
+<!--    <select id="selectApplyed" resultType="com.example.okkyjobs.web.dto.BoardDTO">-->
 <!--		SELECT-->
-<!--			ba.applied_code as appliedCode,-->
+<!--			ba.applyed_code as applyedCode,-->
 <!--			bm.board_code as boardCode,-->
 <!--			um.user_code as userCode,-->
 <!--			ba.applied_text as appliedText,-->

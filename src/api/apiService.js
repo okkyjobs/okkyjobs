@@ -9,39 +9,18 @@ export const createBoard = async (boardData) => {
     }
 };
 
-export const putArticle = async (boardCode, { boardTitle, boardText, boardTag }) => {
-  try {
-    const response = await axios.put(`http://localhost:8000/articles/${boardCode}/edit`, { boardTitle, boardText, boardTag });
-    return response.data;
-  } catch (error) {
-    console.error('게시글 수정 중 오류 발생:', error);
-    throw error;
-  }
-};
-
 export const createComment = async (boardCode, commentData) => {
-  try {
-    const response = await axios.post(`http://localhost:8000/articles/${boardCode}/comment`, commentData, {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    return response.data;
-  } catch (error) {
-    console.error('댓글 생성 중 오류 발생:', error);
-    throw error;
-  }
+    try {
+        const response = await axios.post(`http://localhost:8000/articles/${boardCode}/comment`, commentData, {
+        headers: {
+          'Content-Type': 'application/json'
+          }
+        });
+        console.log(response.data);
+    } catch (error) {
+        console.error('댓글 생성 중 오류 발생:', error);
+    }
 };
-
-
-// export const getAllComments = async (boardCode, commentData) => {
-//   try {
-//     const response = await axios.get(`http://localhost:8000/articles/${boardCode}`, commentData);
-//     return response.data;
-//   } catch (error) {
-//     console.error('${boardCode}로 게시글의 댓글 목록 조회 중 오류 발생: ', error);
-//   }
-// };
 
 
 

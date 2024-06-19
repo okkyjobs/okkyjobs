@@ -5,51 +5,22 @@
 
 <mapper namespace="com.example.okkyjobs.domain.board.CommentRepository">
 
-<!--    <resultMap id="commentResultMap" type="com.example.okkyjobs.domain.board.Comment">-->
-<!--        <id property="appliedCode" column="applied_code"/>-->
-<!--        <result property="userCode" column="user_code"/>-->
-<!--        <result property="boardCode" column="board_code"/>-->
-<!--        <result property="appliedText" column="applied_text"/>-->
-<!--        <result property="createDate" column="create_date"/>-->
-<!--        <result property="updateDate" column="update_date"/>-->
-<!--    </resultMap>-->
+    <resultMap id="commentResultMap" type="com.example.okkyjobs.domain.board.Comment">
+        <id property="appliedCode" column="applied_code"/>
+        <result property="userCode" column="user_code"/>
+        <result property="boardCode" column="board_code"/>
+        <result property="appliedText" column="applied_text"/>
+        <result property="createDate" column="create_date"/>
+        <result property="updateDate" column="update_date"/>
+    </resultMap>
 
-    <insert id="save" parameterType="com.example.okkyjobs.domain.board.Comment">
-        INSERT INTO board_applied (applied_code, user_code, board_code, applied_text, create_date, update_date)
-        VALUES (#{appliedCode}, 75, #{boardCode}, #{appliedText}, NOW(), NOW())
+    <insert id="createComment" parameterType="com.example.okkyjobs.web.dto.CommentDTO">
+        INSERT INTO board_applied (user_code, board_code, applied_text, create_date, update_date)
+        VALUES (75, 2, 1, NOW(), NOW())
     </insert>
-    
-    <select id="selectCommentdByCode" resultType="com.example.okkyjobs.web.dto.CommentDTO">
-        SELECT
-	    	bm.board_code as boardCode,
-            um.user_nickname as userNickname,
-            ba.applied_code as appliedCode,
-            ba.applied_text as appliedText,
-            bm.create_date as createDate,
-            bm.update_date as updateDate
-            (SELECT COUNT(*) FROM board_applyed ba WHERE ba.board_code = bm.board_code) AS commentCount
-        FROM 
-            board_applied ba
-        JOIN 
-            user_mst um
-            	ON ba.user_code = um.user_code 
-        JOIN 
-            board_mst bm
-            	ON ba.board_code = bm.board_code 
-        WHERE 
-            ba.applied_code = #{boardCode}
-	    ORDER BY 
-	        ba.create_date DESC
+
+    <select id="getCommentsByBoardCode" parameterType="int" resultMap="commentResultMap">
+        SELECT * FROM board_applied WHERE board_code = #{boardCode} ORDER BY create_date DESC
     </select>
-
-<!--	<delete id >-->
-<!--		DELETE-->
-<!--			bm.board_code as boardCode,-->
-<!--			bm.-->
-<!--	</delete>-->
-
-<!--    <select id="getCommentsByBoardCode" parameterType="int" resultMap="commentResultMap">-->
-<!--        SELECT * FROM board_applied WHERE board_code = #{boardCode} ORDER BY create_date DESC-->
-<!--    </select>-->
 
 </mapper>
