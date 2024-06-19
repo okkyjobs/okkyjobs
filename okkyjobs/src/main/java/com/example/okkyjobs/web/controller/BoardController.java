@@ -101,27 +101,46 @@ public class BoardController {
 
         return ResponseEntity.ok(boardResponse);
     }
-//    
-//    @PutMapping("/articles/{boardCode}")
-//    public ResponseEntity<BoardResponse> updateBoardLike(@PathVariable("boardCode") int boardCode, @RequestParam("userCode") int userCode, @RequestParam("isCancel") boolean isCancel) {
-//        BoardDTO boardDTO = boardService.updateBoardLike(boardCode, userCode, isCancel);
+    
+    
+    @PutMapping("/articles/{boardCode}/edit")
+    public ResponseEntity<BoardDTO> updateBoard(@PathVariable("boardCode") int boardCode, @RequestBody BoardDTO updatedBoard) {
+        BoardDTO boardDTO = boardService.updateBoard(boardCode, updatedBoard);
+        if (boardDTO == null) {
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(boardDTO);
+    }
+    
+//    @PutMapping("/articles/{boardCode}/edit")
+//    public ResponseEntity<BoardResponse> updateBoard(@PathVariable("boardCode") int boardCode, @RequestBody BoardUpdateRequest request) {
+//        Board board = Board.builder()
+//                .boardCode(boardCode)
+//                .boardTitle(request.getBoardTitle())
+//                .boardText(request.getBoardText())
+//                .boardTag(request.getBoardTag())
+//                .build();
 //
-//        BoardResponse boardResponse = new BoardResponse(
-//                boardDTO.getBoardCode(),
-//                boardDTO.getUserCode(),
-//                boardDTO.getBoardTitle(),
-//                boardDTO.getBoardText(),
-//                boardDTO.getBoardTag(),
-//                boardDTO.getBoardView(),
-//                boardDTO.getLikeCode(),
-//                boardDTO.getDislikeCode(),
-//                boardDTO.getCreateDate(),
-//                boardDTO.getUpdateDate(),
-//                boardDTO.getUserNickname()
+//        boardService.updateBoard(board);
+//
+//        BoardDTO updatedBoardDTO = boardService.selectBoardByCode(boardCode);
+//        BoardResponse updatedBoardResponse = new BoardResponse(
+//                updatedBoardDTO.getBoardCode(),
+//                updatedBoardDTO.getUserCode(),
+//                updatedBoardDTO.getBoardTitle(),
+//                updatedBoardDTO.getBoardText(),
+//                updatedBoardDTO.getBoardTag(),
+//                updatedBoardDTO.getBoardView(),
+//                updatedBoardDTO.getLikeCode(),
+//                updatedBoardDTO.getDislikeCode(),
+//                updatedBoardDTO.getCreateDate(),
+//                updatedBoardDTO.getUpdateDate(),
+//                updatedBoardDTO.getUserNickname()
 //        );
 //
-//        return ResponseEntity.ok(boardResponse);
+//        return ResponseEntity.ok(updatedBoardResponse);
 //    }
+
 //
 //    @PutMapping("/articles/{boardCode}")
 //    public ResponseEntity<BoardResponse> updateBoardDislike(@PathVariable("boardCode") int boardCode, @RequestParam("userCode") int userCode, @RequestParam("isCancel") boolean isCancel) {

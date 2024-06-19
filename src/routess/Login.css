@@ -1,0 +1,327 @@
+@font-face {
+	font-family: "googleNotoSansKR";
+	src: url(./assets/fonts/NotoSansKR-VariableFont_wght.ttf);
+}
+
+:root {
+	--font-googleNotoSansKR: "googleNotoSansKR";
+}
+
+.App {
+/* text-align: center; */
+font-family: var(--font-googleNotoSansKR);
+}
+
+.App-logo {
+height: 40vmin;
+pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+}
+}
+
+.App-header {
+color: white;
+}
+
+.App-link {
+color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+*{
+box-sizing: border-box;
+
+margin: 0px;
+padding: 0px;
+}
+
+.sign_in_logo{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 128;
+padding-bottom: 64;
+width: 100%;
+max-width: 28rem;
+height: 48px;
+}
+
+.center{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 448px;
+}
+
+.welcome-box{
+  margin-top: 24px;
+}
+
+.welcome{
+font-size: 28px;
+font-weight: 700;
+text-align: center;
+}
+
+.introduce{
+color: rgb(75 85 99);
+text-align: center;
+margin-top: .5rem;
+font-size: 13px;
+
+}
+
+.box{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.center_box{
+margin-top: 128px;
+padding-bottom: 64px;
+}
+
+.login-box{
+  display: flex;
+justify-content: left;
+margin-top: 32px;
+}
+
+.login{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.logo_box{
+display: flex;
+flex-direction: row;
+column-gap: 10px;
+box-sizing: border-box;
+padding-top: .5rem;
+padding-bottom: .5rem;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: .375rem;
+
+}
+
+.but-box{
+background-color: white;
+border-radius: .375rem;
+width: 100%;
+}
+
+.logo_box2{
+display: flex;
+justify-content: space-between;
+box-sizing: border-box;
+border-width: 1px;
+padding-top: .5rem;
+padding-bottom: .5rem;
+padding-left: 20px;
+padding-right: 20px;
+border-radius: .375rem; 
+}
+
+.loginbarfont-box{
+  margin-top: 15px;
+
+}
+
+.loginbarfont-box-line{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 8px 0px;
+}
+
+.login-line{
+  border: 1px solid rgb(221, 221, 221);
+  border-top-width: 1px;
+  width: 33%;
+}
+
+.loginbarfont{
+font-size: .875rem;
+justify-content: center;
+}
+
+
+.loginbox{
+color: rgb(107 114 128);
+position: relative;
+border-top-width: 1px;
+}
+
+.id{
+display: flex;
+justify-content: left;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.id-font{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.duplicate-message{
+  color: red;
+  font-size: 13px;
+}
+
+.id-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-span-count span{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.password{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: left;
+margin-top: 24px;
+}
+
+.password-font{
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.id-input{
+border: 0.667px solid rgb(203, 202, 202);
+height: 41.33px;
+width: 100%;
+padding-left: .75rem;
+padding-right: .75rem;
+padding-top: .5rem;
+padding-bottom: .5rem;
+border-width: 1px;
+border-radius: .375rem;
+font-size: 1rem;
+line-height: 1.5rem;
+}
+
+
+
+.password-input{
+border: 0.667px solid rgb(203, 202, 202);
+height: 41.33px;
+width: 100%;
+padding-left: .75rem;
+padding-right: .75rem;
+padding-top: .5rem;
+padding-bottom: .5rem;
+border-width: 1px;
+border-radius: .375rem;
+font-size: 1rem;
+line-height: 1.5rem;
+}
+
+.findac{
+display: flex;
+justify-content: right;
+color: rgb(72, 139, 255);
+font-size: 13px;
+}
+
+.findc-box{
+margin-top: 24px;
+}
+
+.login-but1{
+margin-top: 24px;  
+padding-left: 1rem;
+padding-right: 1rem;
+background-color: rgb(0 144 249);
+border-radius: .375rem;
+justify-content: center;
+border-width: 1px;
+width: 100%;
+display: flex;
+height: 37.33px;
+background-image: none;
+}
+
+.login-but2{
+  margin-top: 24px;  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(185, 185, 185);
+  border-radius: .375rem;
+  justify-content: center;
+  border-width: 1px;
+  width: 100%;
+  display: flex;
+  height: 37.33px;
+  background-image: none;
+  }
+
+.login-but-text1{
+color: white;
+font-weight: 500;
+font-size: 13px;
+line-height: 1.25rem;
+border-color: transparent;
+background-color: rgb(0 144 249);
+}
+
+.login-but-text2{
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.25rem;
+  border-color: transparent;
+  background-color: rgb(185, 185, 185);
+  }
+
+.sign-up-box{
+margin-top: 24px;
+}
+
+.sign-up-but1{
+  font-size: 13px;
+}
+
+.sign-up-but2{
+  color: rgb(72, 139, 255);
+text-decoration: underline;
+  font-size: 13px;
+}
+
+.sign-up-but2-font{
+  font-size: 13px;
+font-weight: 700;
+}
+
+.logo1{
+width: 1.2rem;
+height: 1.2rem;
+}
+
+.but-container{
+padding-top: 5px;
+padding-bottom: 5px;
+}

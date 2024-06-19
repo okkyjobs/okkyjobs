@@ -1,0 +1,145 @@
+.left-box{
+  padding-right: 4rem;
+  grid-column: span 3 / span 3;
+  width: 100%;
+  border-right-width: 1px;
+}
+
+.left-box-nav{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.left-first-box{
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+
+}
+
+.myAccount{
+  font-weight: 500;
+  display: flex;
+}
+
+/* .profile-a{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  background-color: rgb(229 231 235);
+  border-radius: .375rem;
+  display: flex;
+  align-items: center;
+} */
+
+.profile-logo{
+  flex-shrink: 0;
+  color: rgb(156 163 175);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+
+}
+
+.profile-font{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* .manageAcc-a{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  background-color: rgb(229 231 235);
+  border-radius: .375rem;
+  display: flex;
+  align-items: center;
+} */
+
+.mAcc-logo{
+  color: rgb(75 85 99);
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+}
+
+.manageAccount-font{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.line{
+  padding-top: 1.25rem;
+  border-color: rgb(229 231 235);
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px* calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px* var(--tw-divide-y-reverse));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+}
+
+.Jobs-font{
+  font-weight: 500;
+  display: flex;
+}
+
+.career-manage1{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage2{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage3{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage4{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-font{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.pic-class{
+  color: rgb(156 163 175);
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+}

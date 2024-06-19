@@ -38,6 +38,8 @@ import Oauth2Naver from './routess/Oauth2Naver.js';
 import Oauth2Google from './routess/Oauth2Google.js';
 import GoogleLogin3 from './routess/GoogleLogin3.js';
 import ResignUp from './routess/ResignUp.js';
+// import ArticlesDetail from './routess/ArticlesDetail.js';
+import ArticlesEdit from './routes/ArticlesEdit.js';
 
 
 function App() {
@@ -131,6 +133,7 @@ function App() {
           <Route path='/evalcom/new' element={<EvalcomNew/>}/>
           <Route path='/users/userCode/articles' element={<Articles/>}/>
           <Route path="/articles/:boardCode" element={<ArticlesDetail/>}/>
+          <Route path="/articles/:boardCode/edit" element={<ArticlesEdit/>}/>
           <Route path='/talents' element={<Talent/>}/>
           <Route path='/products/1' element={<ProductsR/>}/>
           <Route path='/products/2' element={<ProductsW/>}/>

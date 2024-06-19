@@ -1,10 +1,15 @@
 package com.example.okkyjobs.web.dto;
-import lombok.Getter;
-import lombok.Setter;
+import java.time.LocalDateTime;
 
-@Getter
-@Setter
+import lombok.Data;
+
+
+@Data
 public class CommentCreateRequest {
-	private String appliedText;
-
+	private int appliedCode;
+    private int userCode;
+    private int boardCode;
+    private String appliedText;
+    private LocalDateTime createDate;
+    private LocalDateTime updateDate;
 }

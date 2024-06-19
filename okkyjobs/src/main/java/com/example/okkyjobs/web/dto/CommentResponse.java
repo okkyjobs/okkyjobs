@@ -20,15 +20,17 @@ public class CommentResponse {
     private LocalDateTime updateDate;
 
     public CommentResponse(CommentDTO commentDTO) {
-//        this.appliedCode = commentDTO.getAppliedCode();
+        this.appliedCode = commentDTO.getAppliedCode();
         this.userCode = commentDTO.getUserCode();
         this.boardCode = commentDTO.getBoardCode();
         this.appliedText = commentDTO.getAppliedText();
         this.createDate = commentDTO.getCreateDate();
         this.updateDate = commentDTO.getUpdateDate();
     }
+    
 
-	public CommentResponse(Comment savedComment) {
-		// TODO Auto-generated constructor stub
-	}
+
+//	public CommentResponse(Comment savedComment) {
+//		// TODO Auto-generated constructor stub
+//	}
 }

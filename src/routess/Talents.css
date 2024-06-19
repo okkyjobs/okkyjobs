@@ -1,0 +1,178 @@
+.guzik-manage-font{
+    font-size: 19px;
+    display: flex;
+    font-weight: 500;
+}
+
+.guzik-right-main-box{
+    grid-column: span 9 / span 9;
+    border-left: 1px solid rgb(223, 217, 217);
+    padding-left: 80px;
+    border-left-width: 0.667px;
+
+}
+
+.guzik-box{
+    border-top: 1px solid rgb(223, 217, 217);
+    margin-top: 45px;
+}
+
+.guzik-datetime{
+    color: rgb(181, 24, 181);
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.guizk-list-num{
+    display: flex;
+    
+}
+
+.guzik-tagnum{
+    font-weight: 800;
+}
+
+.guzik-datetime{
+    padding-left: 15px;
+}
+
+.guzik-list-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guzik-list1{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    border-top: 1px solid rgb(220, 217, 217);
+    margin-bottom: 40px;
+}
+
+.guzik-career-show{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 10px;
+    border-radius: 43px;
+    border: 1px solid rgb(211, 210, 210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+.guzik-show-Career{
+    width: 1rem;
+    height: 1rem;
+}
+
+.read-career-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.read-career-pic{
+    width: 1rem;
+    height: 1rem;
+}
+
+.read-career{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.read-career-font{
+    font-size: 14px;
+    opacity: 0.5;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.read-career-close-font{
+    font-size: 13px;
+    opacity: 0.7;
+    color: rgb(183, 61, 183);
+    font-weight: 500;
+    /* margin-left: 20px; */
+    margin-right: 10px;
+}
+
+.read-career-close-box{
+    display: flex;
+}
+
+.guzik-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.guzik-show-list{
+    display: flex;
+    margin-top: -25px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(220, 217, 217);
+    margin-bottom: 40px;
+}
+
+.guzik-icon-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.guzik-icon-box{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.guzik-icon-font{
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.guzik-icon-date{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.guzik-icon-date-box{
+    padding-left: 480px;
+    display: flex;
+    align-items: center;
+}
+
+.guzik-read-cpt{
+    font-size: 13px;
+    padding: 4px 10px;
+    border: 1px solid rgb(170, 167, 167);
+    border-radius: 43px;
+    margin-left: 15px;
+    font-size: 500;
+}
+
+.read-career-but{
+    padding: 4px 10px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 43px;
+    font-size: 13px;
+    margin-left: 15px;
+    font-size: 500;
+}
+
+.read-career-box2{
+    display: flex;
+}

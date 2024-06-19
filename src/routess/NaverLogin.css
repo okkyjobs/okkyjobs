@@ -1,0 +1,27 @@
+#naverIdLogin{
+    display: none;
+}
+
+.NaverLoginBtn{
+    display: flex;
+	align-items: center;
+    justify-content: center;
+	width: 100%;
+    height: 100%;
+	background-color: white;
+	border-radius: 6px;
+}
+
+.NaverIcon{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-left: 10px;
+}
+
+.naver-pic{
+    width: 1.4rem;
+    height: 1.6rem;
+}
