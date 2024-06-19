@@ -2,13 +2,14 @@ package com.example.okkyjobs.web.dto;
 
 import java.time.LocalDateTime;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import com.example.okkyjobs.domain.board.Comment;
 
-@Getter
-@Setter
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class CommentDTO {
@@ -18,5 +19,15 @@ public class CommentDTO {
     private String appliedText;
     private LocalDateTime createDate;
     private LocalDateTime updateDate;
+    
+//    public CommentDTO(Comment comment) {
+//    	this.appliedCode = comment.getAppliedCode();
+//        this.userCode = comment.getUserCode();
+//        this.boardCode = comment.getBoardCode();
+//        this.appliedText = comment.getAppliedText();
+//        this.createDate = comment.getCreateDate();
+//        this.updateDate = comment.getUpdateDate();
+//
+//    }
     
 }

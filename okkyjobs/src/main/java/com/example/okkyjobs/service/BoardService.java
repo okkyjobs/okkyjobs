@@ -37,6 +37,19 @@ public class BoardService {
         return boardRepository.selectBoardByCode(boardCode);
     }
     
+    
+    
+    
+    public BoardDTO updateBoard(int boardCode, BoardDTO updatedBoard) {
+        BoardDTO updatedBoardDto = boardRepository.updateBoardByCode(boardCode, updatedBoard.getBoardTitle(), updatedBoard.getBoardText(), updatedBoard.getBoardTag());
+        if (updatedBoardDto == null) {
+            return null;
+        }
+        return updatedBoardDto;
+    }
+
+    
+    
 
 //    public void toggleLike(int boardCode) {
 //        BoardDTO boardDto = boardRepository.selectBoardByCode(boardCode);
