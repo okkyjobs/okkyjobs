@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Okk2/src/main/java"/>
+	<classpathentry kind="src" path="Okk2/src/test/java"/>
+	<classpathentry excluding="com/example/okkyjobs/repository/" kind="src" path="okkyjobs/src/main/java"/>
+	<classpathentry kind="src" path="okkyjobs/src/main/java/com/example/okkyjobs/repository"/>
+	<classpathentry kind="src" path="okkyjobs/src/test/java"/>
+	<classpathentry kind="src" path="okkyjobs2/src/main/java"/>
+	<classpathentry kind="src" path="okkyjobs2/src/test/java"/>
+	<classpathentry kind="src" path="spring-security/src/main/java"/>
+	<classpathentry kind="src" path="spring-security/src/test/java"/>
+	<classpathentry kind="lib" path="Okk2/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="okkyjobs/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="okkyjobs2/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="react_main/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="spring-security/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="output" path="spring-security/bin"/>
+</classpath>

@@ -543,7 +543,7 @@ function App4() {
     <div>
       <div>
       <h1>임시 저장 폼</h1>
-      <form onSubmit={handleSubmit}>
+      <form>
         <input 
           type="text" 
           value={inputValue} 
