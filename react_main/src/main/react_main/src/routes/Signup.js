@@ -104,7 +104,8 @@ const handleSubmit = async (e) => {
     const response = await axios.post(baseUrl + "/api/v1/auth/signup", {
       id, password, email, name, nickname, wishtag, emailAgree, type, serviceAgree, personalInfoAgree ,provider, checkUsernameFlag
     });
-
+    alert("회원가입 성공!")
+    navigate("/oksignup")
     // alert("서버에 보내고 서버가 다시 보낸 데이터\n" + JSON.stringify(response.data));
     } catch (err) {
       // alert("이미 존재하는 아이디 입니다.");
@@ -150,7 +151,7 @@ const changeInput = (e) => {
       }))
     }
 }
-console.log(idError);
+// console.log(idError);
 
 // useEffect(() => {
 //   localStorage.removeItem('user')
