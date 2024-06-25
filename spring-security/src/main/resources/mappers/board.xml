@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.study.security20240312yeonho.boardDomain.board.BoardRepository">
+
+    <!-- 게시물 삽입 -->
+    <insert id="save" parameterType="com.study.security20240312yeonho.boardDomain.board.Board">
+    	INSERT INTO board_mst (board_code, user_code, board_title, board_text, board_tag, board_view, like_code, dislike_code, create_date, update_date)
+    	VALUES (#{boardCode}, 75, #{boardTitle}, #{boardText}, #{boardTag}, #{boardView}, #{likeCode}, #{dislikeCode}, NOW(), NOW())
+    </insert>
+	
+	<select id="selectAllBoards" resultType="com.study.security20240312yeonho.boardWeb.dto.BoardDTO">
+	    SELECT 
+	    	bm.board_code as boardCode,
+	        um.user_nickname as userNickname,
+	        bm.board_title as boardTitle,
+	        bm.board_tag as boardTag,
+	        bm.board_view as boardView,
+	        bm.like_code as likeCode,
+	        bm.dislike_code as dislikeCode,
+	        bm.create_date as createDate,
+	        bm.update_date as updateDate,
+	        (SELECT COUNT(*) FROM board_applied ba WHERE ba.board_code = bm.board_code) AS commentCount
+	    FROM 
+	        board_mst bm
+	    JOIN 
+	        user_mst um ON bm.user_code = um.user_code 
+	    ORDER BY 
+	        bm.create_date DESC
+	</select>
+	
+	
+	
+    <!-- 게시물 상세 조회 -->
+    <select id="selectBoardByCode" resultType="com.study.security20240312yeonho.boardWeb.dto.BoardDTO">
+        SELECT
+	    	bm.board_code as boardCode,
+            um.user_nickname as userNickname,
+            bm.board_title as boardTitle,
+            bm.board_text as boardText,
+            bm.board_tag as boardTag,
+            bm.board_view as boardView,
+            bm.like_code as likeCode,
+            bm.dislike_code as dislikeCode,
+            bm.create_date as createDate,
+            bm.update_date as updateDate,
+            (SELECT COUNT(*) FROM like_list ll WHERE ll.board_code = bm.board_code) AS likeCount,
+        	(SELECT COUNT(*) FROM dislike_list dl WHERE dl.board_code = bm.board_code) AS dislikeCount
+<!--            (SELECT COUNT(*) FROM board_applyed ba WHERE ba.board_code = bm.board_code) AS commentCount-->
+        FROM 
+            board_mst bm
+        JOIN 
+            user_mst um ON bm.user_code = um.user_code 
+        WHERE 
+            bm.board_code = #{boardCode}
+    </select>
+    
+    <update id="updateBoardByCode" parameterType="com.study.security20240312yeonho.boardDomain.board.BoardRepository">
+	    UPDATE board_mst
+	    SET board_title = #{boardTitle},
+	        board_text = #{boardText},
+	        board_tag = #{boardTag},
+	        update_date = NOW()
+	    WHERE board_code = #{boardCode}
+	</update>
+    
+    
+  
+    
+<!--	    댓글 작성-->
+<!--    <insert id="saveApplyed" parameterType="com.example.okkyjobs.domain.board.Board">-->
+<!--    	INSERT INTO board_applied (applyed_code, user_code, board_code, applied_text, create_date, update_date)-->
+<!--    	VALUES (#{appliedCode}, 14, #{boardCode}, #{appliedText}, NOW(), NOW())-->
+<!--    </insert>-->
+    
+<!--	    댓글 조회-->
+<!--    <select id="selectApplied" resultType="com.example.okkyjobs.web.dto.BoardDTO">-->
+<!--		SELECT-->
+<!--			ba.applied_code as appliedCode,-->
+<!--			bm.board_code as boardCode,-->
+<!--			um.user_code as userCode,-->
+<!--			ba.applied_text as appliedText,-->
+<!--            ba.create_date as createDate,-->
+<!--            ba.update_date as updateDate-->
+<!--		 FROM -->
+<!--            board_applied ba-->
+<!--         JOIN-->
+<!--         	board_mst bm ON bm.board_code = ba.user_code-->
+<!--     	  WHERE-->
+<!--     	  	bm.board_code = #{boardCode}-->
+<!--	    ORDER BY -->
+<!--	        ba.create_date DESC-->
+<!--    </select>-->
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- 게시물 조회 
+    <select id="selectPostById" parameterType="" resultType="com.okkyjobs.board.model.Post">
+        SELECT
+        	user_id,
+        	user_nickname,
+        	title,
+        	content,
+        	create_time,
+        	like_code,
+        	dislike_code,
+        	view
+        FROM
+        	board_mst
+        WHERE
+        	user_id = #{id}
+    </select>
+    -->
+
+    <!-- 모든 게시물 조회
+    <select id="selectAllPosts" resultType="com.okkyjobs.board.model.Post">
+        SELECT
+        	um.user_id
+        	um.user_nickname
+        	bm.title
+        	bm.create_time
+        	bm.like_code
+        	bm.dislike_code
+        	bm.view
+        FROM
+        	board_mst AS bm
+        	LEFT OUTER JOIN
+        	user_mst AS um
+        	ON bm.user_code = um.user_code
+        	
+        	
+    </select>
+    -->
+
+    <!-- 게시물 업데이트
+    <update id="updatePost" parameterType="com.okkyjobs.board.model.Post">
+        UPDATE board_mst
+        SET user_nickname = #{userNickname},
+            title = #{title},
+            content = #{content},
+            create_time = #{createTime},
+            like_code = #{like_code},
+            dislike_code = #{dislike_code},
+            view = #{view}
+        WHERE
+        	user_id = #{id}
+    </update>
+    -->
+
+    <!-- 게시물 삭제
+    <delete id="deletePost" parameterType="long">
+        DELETE FROM
+        	board_mst
+        WHERE
+        	board_code = #{board_code}
+    </delete>
+    -->
+
+</mapper>

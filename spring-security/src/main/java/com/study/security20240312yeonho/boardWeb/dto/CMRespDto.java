@@ -1,7 +1,4 @@
-package com.study.security20240312yeonho.securityWeb.dto;
-
-
-import com.study.security20240312yeonho.securityDomain.user.User;
+package com.study.security20240312yeonho.boardWeb.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +12,4 @@ public class CMRespDto<T> {
 	private int code;
 	private String message;
 	private T data;
-	private UsernameCheckReqDto usernameCheckReqDto;
-	private User user;
 }

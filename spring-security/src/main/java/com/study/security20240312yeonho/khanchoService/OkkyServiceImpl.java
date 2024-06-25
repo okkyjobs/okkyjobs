@@ -9,6 +9,7 @@ import com.study.security20240312yeonho.khanchoWeb.dto.OkkyReqDto;
 import lombok.RequiredArgsConstructor;
 
 
+
 @Service
 @RequiredArgsConstructor
 public class OkkyServiceImpl implements OkkyService{
