@@ -1,4 +1,4 @@
-package com.Okk2.Okk2.domain.officeInfo;
+package com.study.security20240312yeonho.sgdomain.officeInfo;
 
 import java.util.List;
 

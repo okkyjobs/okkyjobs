@@ -1,4 +1,4 @@
-package com.study.security20240312yeonho.domain.user;
+package com.study.security20240312yeonho.sgdomain.user;
 
 import java.util.ArrayList;
 import java.util.Arrays;

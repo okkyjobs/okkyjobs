@@ -6,7 +6,7 @@ import javax.validation.constraints.Pattern;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.study.security20240312yeonho.domain.user.User;
+import com.study.security20240312yeonho.securityDomain.user.User;
 
 import lombok.Data;
 

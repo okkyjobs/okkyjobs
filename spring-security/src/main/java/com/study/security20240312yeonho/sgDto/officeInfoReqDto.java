@@ -3,7 +3,7 @@ package com.study.security20240312yeonho.sgDto;
 
 import java.time.LocalDateTime;
 
-import com.Okk2.Okk2.domain.officeInfo.officeInfo;
+import com.study.security20240312yeonho.sgdomain.officeInfo.officeInfo;
 
 import lombok.Builder;
 import lombok.Data;

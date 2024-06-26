@@ -1,21 +1,20 @@
 package com.study.security20240312yeonho.sgservice;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 import org.springframework.stereotype.Service;
 
 import com.study.security20240312yeonho.sgDto.officeInfoReqDto;
+import com.study.security20240312yeonho.sgdomain.officeInfo.officeInfo;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+
 import lombok.RequiredArgsConstructor;
 
 @Service 
 @RequiredArgsConstructor
 public class officeServiceImpl implements officeService {
 
-	private final officeInfoRepository officeInfoRepository;
+	private final com.study.security20240312yeonho.sgdomain.officeInfo.officeInfoRepository officeInfoRepository;
 	
 	//dto를 ntt로
 	@Override

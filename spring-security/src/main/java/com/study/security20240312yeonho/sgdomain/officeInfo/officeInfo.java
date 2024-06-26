@@ -1,9 +1,7 @@
-package com.Okk2.Okk2.domain.officeInfo;
+package com.study.security20240312yeonho.sgdomain.officeInfo;
 
 import java.time.LocalDateTime;
 
-import com.Okk2.Okk2.Dto.officeInfoReqDto;
-import com.Okk2.Okk2.Dto.officeInfoRespDto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,8 +34,8 @@ public class officeInfo {
 	
 	//ntt를 dto로 
 	// build = 생성을 쉽게
-	public officeInfoRespDto toDto() {
-		return officeInfoRespDto.builder()
+	public com.study.security20240312yeonho.sgDto.officeInfoRespDto toDto() {
+		return com.study.security20240312yeonho.sgDto.officeInfoRespDto.builder()
 				.userCode(userCode)
 				.officeImg(officeImg)
 				.officeName(officeName)
