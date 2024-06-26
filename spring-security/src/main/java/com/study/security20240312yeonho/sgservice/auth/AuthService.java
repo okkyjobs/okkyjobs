@@ -1,6 +1,6 @@
-package com.study.security20240312yeonho.service.auth;
+package com.study.security20240312yeonho.sgservice.auth;
 
-import com.study.security20240312yeonho.web.dto.UsernameCheckReqDto;
+import com.study.security20240312yeonho.securityWeb.dto.UsernameCheckReqDto;
 
 public interface AuthService {
 

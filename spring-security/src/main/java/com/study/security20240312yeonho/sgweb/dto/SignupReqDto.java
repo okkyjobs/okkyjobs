@@ -1,4 +1,4 @@
-package com.study.security20240312yeonho.web.dto;
+package com.study.security20240312yeonho.sgweb.dto;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

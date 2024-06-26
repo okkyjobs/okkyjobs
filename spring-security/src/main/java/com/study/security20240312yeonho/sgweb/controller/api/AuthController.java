@@ -1,4 +1,4 @@
-package com.study.security20240312yeonho.web.controller.api;
+package com.study.security20240312yeonho.sgweb.controller.api;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,15 +14,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.study.security20240312yeonho.handler.aop.annotation.Log;
-import com.study.security20240312yeonho.handler.aop.annotation.Timer;
-import com.study.security20240312yeonho.handler.aop.annotation.ValidCheck;
-import com.study.security20240312yeonho.handler.exception.CustomValidationApiException;
-import com.study.security20240312yeonho.service.auth.AuthService;
-import com.study.security20240312yeonho.service.auth.PrincipalDetailsService;
-import com.study.security20240312yeonho.web.dto.CMRespDto;
-import com.study.security20240312yeonho.web.dto.SignupReqDto;
-import com.study.security20240312yeonho.web.dto.UsernameCheckReqDto;
+import com.study.security20240312yeonho.securityHandler.aop.annotation.ValidCheck;
+import com.study.security20240312yeonho.securityService.auth.AuthService;
+import com.study.security20240312yeonho.securityService.auth.PrincipalDetailsService;
+import com.study.security20240312yeonho.securityWeb.dto.UsernameCheckReqDto;
+import com.study.security20240312yeonho.sgDto.CMRespDto;
+import com.study.security20240312yeonho.sgweb.dto.SignupReqDto;
 
 import lombok.RequiredArgsConstructor;
 
