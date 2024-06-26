@@ -1,0 +1,1110 @@
+*{
+  box-sizing: border-box;
+  
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo {
+  position: fixed;
+  margin-left: 30.7%;
+  bottom: 95%;
+}
+
+.App2{
+  height: 1700px;
+  width: 1000px;
+  margin-left: 390px;
+}
+
+
+.top {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid gray;
+  z-index: 2;
+  bottom: 92.5%;
+  width: 100%;
+  right: 0.1%;
+}
+
+.top-main{
+  width: 1730px;
+  height: 75px;
+  background-color: white;
+  position: fixed;
+  z-index: 3;
+  top: 0%;
+  left: 0%;
+}
+
+
+.logo {
+  position: fixed;
+  margin-left: 15.7%;
+  bottom: 93.2%;
+}
+
+.a {
+  position: fixed;
+  margin-left: 27%;
+  bottom: 93.2%;
+}
+
+.b {
+  position: fixed;
+  margin-left: 30.8%;
+  bottom: 93.2%;
+  background: white;
+  border: white;
+  top: 0.5%;
+}
+
+.c {
+  position: fixed;
+  margin-left: 33.4%;
+  bottom: 93.2%
+;
+}
+
+.d {
+  position: fixed;
+  margin-left: 38.2%;
+  bottom: 93.2%;
+}
+
+.e {
+  position: fixed;
+
+  left: 62.8%;
+  bottom: 93.2%;
+
+}
+
+.f{
+  position: fixed;
+  left: 74.7%;
+  bottom: 93.2%;
+}
+
+.g {
+  position: fixed;
+  left: 68.8%;
+  bottom: 93.2%;
+}
+
+
+
+.footer2{
+  position: relative;
+
+  
+  width: 100%;
+  margin: 8% -6%;
+ top: -70%;
+}
+
+.footer-main2{
+  position: relative;
+  width: 100%;
+}
+
+.footer-bar2 {
+  position: absolute;
+ margin-top: -1.7%;
+  border-bottom: 1px solid rgb(186, 178, 178);
+  width: 197.1%;
+  left: -57.2%;
+  color: white;
+}
+.footer2 button {
+  
+  all: unset;
+}
+
+.footer-cat2 {
+
+  position: absolute;
+
+  right: -12.5%;
+  
+}
+
+.footer22 {
+  
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  top: -70%;
+  margin: -13% 15%;
+}
+
+
+.facebook22 {
+  
+  position: absolute;
+  width: 6.5%;
+  left: -38.8%;
+  bottom: 130px;
+}
+
+.youtube22 {
+  position: absolute;
+  width: 6.5%;
+  left: -20.5%;
+  bottom: 130px;
+}
+
+.email22 {
+  position: absolute;
+  width: 6.5%;
+  left: -2.5%;
+  bottom: 131px;
+}
+
+
+.footer-logo22 {
+  margin: 0px 1%;
+  width: 50px;
+  height: 50px;
+}
+
+.ok-logo2{
+  position: relative;
+  top: 50px;
+  width: 160px;
+  height: 100px;
+  left: -50%;
+}
+
+.ok-logo22{
+  position: absolute;
+  top: 10px;
+  width: 126px;
+  height: 34px;
+  left: 21%;
+}
+
+ .footer-logo2{
+  position: relative;
+  width: 300px;
+  height: 300px;
+ }
+
+
+.footer-logo2 h2 {
+  font-size: 13px;
+  margin-top: 1%;
+}
+
+.ok-logoside2{
+  position: absolute;
+  top: 60px;
+  left: 25%;
+}
+
+
+
+
+.footer-middle2 {
+
+  position: relative;
+  top: -82%;
+  
+  
+}
+
+
+
+.button-one2 {
+  position: absolute;
+  
+  left: 6%;
+  top: 80px;
+}
+
+
+.button-two2 {
+  position: absolute;
+  
+  left: 16%;
+  top: 80px;
+  
+}
+
+.button-three2 {
+  position: absolute;
+
+  left: 26.2%;
+  top: 80px;
+}
+
+.button-four2 {
+  position: absolute;
+
+  left: 32.5%;
+  top: 80px;
+}
+
+.button-five2 {
+  position: absolute;
+
+  left: 52.5%;
+  top: 80px;
+}
+
+
+.footer-middle2 button {
+  all: unset;
+
+  font-size: 14px;
+
+
+}
+
+
+.footer-text2 {
+
+  
+  position: relative;
+  font-size: 12px;
+  top: -1160px;
+  left: 9.6%;
+}
+
+.text-one2 {
+  position: absolute;
+
+  left: 12.1%;
+  bottom: 70px;
+}
+
+.text-two2 {
+  position: absolute;
+
+  left: 12.1%;
+  bottom: 48px;
+}
+
+.text-three2 {
+  position: absolute;
+
+  left: 12.1%;
+  bottom: 28px;
+}
+
+.text-four2 {
+  position: absolute;
+
+  left: 12.14%;
+  bottom: 10px;
+}
+
+.last-footer2 {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+ top: -1300px;
+  position: relative;
+}
+
+.sponse2 {
+  position: absolute;
+  width: 110px;
+  left: 165.5%;
+  bottom: 75px;
+}
+
+.sponse2 h2 {
+  font-size: 14px;
+}
+
+.iname-ncloud2{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  bottom: -80px;
+}
+
+.iname2 {
+  position: absolute;
+ width: 10%;
+ height: 40px;
+  left: 110.5%;
+  margin-top: 22%;
+}
+
+.ncloud2 {
+  position: absolute;
+  
+  left: 180.5%;
+  bottom: 30px;
+}
+
+.last-footer2 img {
+  width: 40.1%;
+  top: 10%;
+  position: relative;
+}
+
+.last-fotter2{
+  position: absolute;
+  top: 10%;
+}
+
+.footer-btn2 {
+  position: relative;
+  
+}
+
+.button-one2 {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 15.7%;
+}
+
+.button-two2 {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 12.8%;
+}
+
+.button-three2 {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 9.9%;
+}
+
+.button-four2{
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 8.2%;
+}
+
+.button-five2 {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 2.6%;
+}
+
+.cat2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: -36px;
+  left: 1100px;
+}
+
+.backmain {
+  position: absolute;
+}
+.backg2 {
+  position: relative;
+  opacity: .05;
+  width: 30%;
+  height: 10%;
+ top: -1068px;
+  
+  margin-left: 1400px;
+}
+
+
+
+.input-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+background-color: white;
+  left: 47%;
+  top: 205px;
+
+  width: 500px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 25px;
+}
+.xbutton {
+  padding: 0px 15px;
+}
+
+.input-bar button {
+  background-color: #6d28d9;
+  color: white;
+
+  border-radius: 25px;
+  border: 0.5px solid gray;
+
+  padding: 5px 20px;
+}
+.input-search {
+  display: flex;
+  padding: 0px 5px;
+  
+}
+.input-search img {
+  margin: 0px 20px;
+}
+.textsearch {
+  font-size: 12px;
+  outline: none;
+  border: none;
+  width: 100%;
+ 
+}
+
+.img main{
+  position: relative;
+}
+
+.one {
+  position: absolute;
+  top: 25%;
+  left: 40.8%;
+}
+
+.two {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+.tree {
+  position: absolute;
+  top: 25%;
+  left: 59%;
+}
+
+.fore{
+  position: absolute;
+  top: 50%;
+  left: 40.8%;
+}
+
+.five{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.six{
+  position: absolute;
+  top: 50%;
+  left: 59%;
+}
+
+.seven{
+  position: absolute;
+  top: 75%;
+  left: 40.8%;
+}
+
+.eigth{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+
+
+
+.Latest{
+  position: absolute;
+  width: 85px;
+  height: 40px;
+  background-color: white;
+  border-radius: 7px 7px;
+  font-size: 13px;
+  top: 20.5%;
+  left: 65%;
+  border: 0.5px solid gray;
+}
+
+.left{
+  position: relative;
+  width: 300px;
+  height: 800px;
+  left: 30%;
+  top: 100px;
+}
+
+.left-top{
+  position: absolute;
+  left: 11%;
+  margin-top: 10.5%;
+}
+
+.left-one{
+  position: relative;
+
+}
+
+.propile-button{
+  position: absolute;
+  width: 80%;
+  height: 40px;
+  border: white;
+  margin-top: 25.8%;
+  left: 12%;
+  font-size: 15px;
+  text-align: left;
+  background-color: white;
+}
+
+.propile-button1{
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  border: white;
+  margin-top: 25.8%;
+  left: 22%;
+  font-size: 15px;
+  text-align: left;
+  background-color: white;
+}
+
+.propile{
+  position: absolute;
+  margin-top: 27.8%;
+ left: 11.2%;
+  z-index: 1;
+  
+}
+
+.option{
+  position: absolute;
+  margin-top: 43.8%;
+ left: 11.5%;
+  z-index: 1;
+  
+}
+
+.option-button{
+  position: absolute;
+  width: 80%;
+  height: 40px;
+  border: white;
+  margin-top: 39.8%;
+  left: 12%;
+  font-size: 15px;
+  text-align: left;
+  background-color: white;
+}
+
+.option-button1{
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  border: white;
+  margin-top: 39.8%;
+  left: 22%;
+  font-size: 15px;
+  text-align: left;
+background-color: white;
+}
+
+.top-hr{
+  position: absolute;
+  margin-top: 60%;
+  width: 90%;
+  left: 10%;
+background-color: rgb(117, 115, 115);
+  
+}
+
+.company-main{
+  position: relative;
+  width: 100%;
+  height: 1200px;
+  left: 32.5%;
+  top: -1500px;
+}
+
+.company{
+  position: absolute;
+  
+  top: -5%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.announcement{
+  position: absolute;
+  top: -4.5%;
+}
+
+.company-img{
+  position: absolute;
+  top: 0%;
+}
+
+.company-name{
+  position: absolute;
+  top: 15.2%;
+  font-size: 13px;
+  font-weight: bold;
+;
+}
+
+.company-name-input{
+  position: absolute;
+  top: 17%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.company-number{
+  position: absolute;
+  top: 15.2%;
+  left: 46%;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.company-number-input{
+  position: absolute;
+  top: 17%;
+  left: 46%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.Representative-phone{
+  position: absolute;
+  top: 22.2%;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.Representative-input{
+  position: absolute;
+  top: 24.2%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.Representative-email{
+  position: absolute;
+  top: 22.2%;
+  left: 46%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.Representative-email-input{
+  position: absolute;
+  top: 24%;
+  left: 46%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.company-code{
+  position: absolute;
+  top: 29.2%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.company-code-input{
+  position: absolute;
+  top: 31.2%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.Manager{
+  position: absolute;
+  top: 37%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Manager-name{
+  position: absolute;
+  top: 41.5%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.Manager-name-input{
+  position: absolute;
+  top: 43.5%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.Manager-phone{
+  position: absolute;
+  top: 41.5%;
+  left: 46%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.Manager-phone-input{
+  position: absolute;
+  top: 43.5%;
+  width: 41%;
+  left: 46%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.Manager-email{
+  position: absolute;
+  top: 49%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.Manager-email-input{
+  position: absolute;
+  top: 51%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.company-information{
+  position: absolute;
+  top: 57%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.company-people{
+  position: absolute;
+  top: 61.5%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.company-people-input{
+  position: absolute;
+  top: 63.5%;
+  width: 41%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.company-web{
+  position: absolute;
+  top: 61.5%;
+  left: 46%;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+.company-web-input{
+  position: absolute;
+  top: 63.5%;
+  width: 41%;
+  left: 46%;
+  height: 3%;
+  border-radius: 10px 10px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+
+.company-page{
+  position: absolute;
+  top: 69.5%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.company-page-input{
+  position: absolute;
+  top: 73.5%;
+  width: 87%;
+  height: 25%;
+  border-radius: 5px 5px;
+  border-width: 0.7px;
+  border-color: silver;
+}
+.company-main2{
+  position: absolute;
+  top: 99.5%;
+  left: -1%;
+  width: 89%;
+}
+
+.company-button{
+  position: absolute;
+  top: 110%;
+  left: 79.5%;
+  background-color: rgb(180, 107, 249);
+  border: none;
+  border-color: white;
+  border-radius: 20px 20px;
+  color: white;
+  width: 8%;
+  height: 3%;
+}
+
+.main-class2{
+  display: flex;
+  max-width: 80rem;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: auto;
+  margin-top: 4%;
+  
+}
+
+.main-box2{
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container2{
+  /* display: grid; */
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+
+}
+
+.left-box2{
+  padding-right: 4rem;
+  /* grid-column: span 3 / span 3; */
+  border-right: 1px solid rgb(229 231 235);
+position: relative;
+left: -10%;
+height: 1600px;
+top: 10px;
+}
+
+.left-box-nav{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.left-first-box{
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+
+}
+
+.myAccount{
+  font-weight: 500;
+  display: flex;
+}
+
+.profile-a{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  display: flex;
+  align-items: center;
+}
+
+.profile-logo{
+  flex-shrink: 0;
+  color: rgb(156 163 175);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+
+}
+
+.profile-font{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+   text-decoration: none;
+}
+
+.manageAcc-a{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  display: flex;
+  align-items: center;
+}
+
+.mAcc-logo{
+  color: rgb(75 85 99);
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+}
+
+.manageAccount-font{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.line{
+  width: 230px;
+  padding-top: 1.25rem;
+  border-color: rgb(229 231 235);
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px* calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px* var(--tw-divide-y-reverse));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+  /* border-top: 1px solid ; */
+}
+
+.Jobs-font{
+  font-weight: 500;
+  display: flex;
+}
+
+.career-manage1{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage2{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage22{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  background-color: rgb(229 231 235); 
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+
+.career-manage3{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage4{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage31{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  background-color: rgb(229 231 235);
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-manage5{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem .75rem;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.career-font{
+
+    text-overflow: ellipsis;
+    /*\\ overflow: hidden; */
+    white-space: nowrap;
+ 
+  }
+
+
+.pic-class{
+  color: rgb(156 163 175);
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+}
+
+.pic-class31{
+  color: rgb(156 163 175);
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: .75rem;
+  margin-left: -.25rem;
+}
+
+
+
+.company-code-file{
+  position: absolute;
+  top: 31.6%;
+  left: 1%;
+  z-index: 1;
+}
+
+.company-code-file2{
+  position: absolute;
+  z-index: 1;
+  width: 146px;
+  height: 150px;
+  color: white;
+}

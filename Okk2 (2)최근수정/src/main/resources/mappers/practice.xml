@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace ="com.Okk2.Okk2.domain.officeInfo.officeInfoRepository">
+	
+		<insert id="officeInfoInput" parameterType="com.Okk2.Okk2.domain.officeInfo.officeInfo">
+			INSERT Into
+				 office_info
+			VALUES(
+				 5,
+				 10,
+				 "img",
+				 #{office_name},
+				 #{office_authcode},
+				 #{boss_phone},
+				 #{boss_email},
+				 #{registration},
+				 #{manager_name},
+				 #{manager_phone},
+				 #{manager_email},
+				 #{empl_num},
+				 #{office_url},
+				 #{office_text},
+				 3,
+				 4,
+				 now(),
+				 now()
+			 )
+
+		</insert>
+</mapper>
