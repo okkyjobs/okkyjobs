@@ -216,7 +216,7 @@ img{
   display: flex;
   align-items: center;
   margin-left: 40px;
-  
+  margin-right: -40px;
 }
 
 .shrink-0{
@@ -258,7 +258,7 @@ img{
   flex-shrink: 0;
   display: flex;
   align-items: center;
-  margin-left: 330px;
+  margin-left: 300px;
 }
 
 .left-margin{
@@ -333,7 +333,7 @@ img{
 .head-second-box1{
   display: flex;
   margin-right: .5rem;
-  column-gap: .25rem;
+  column-gap: .5rem;
 }
 
 .buyForShow{
@@ -377,7 +377,7 @@ button, input, optgroup, select, textarea {
 }
 
 .head-third-box{
-  margin-right: 1.5rem;
+  margin-right: 30px;
 }
 
 .company-but{
@@ -440,6 +440,131 @@ button, input, optgroup, select, textarea {
   width: 2rem;
   height: 2rem;
   
+}
+
+.profileModal{
+  position: fixed;
+  top: 5%;
+  right: 16.5%;
+  z-index: 10;
+}
+
+.modal-line{
+  padding-top: 1.25rem;
+  border-color: rgb(229 231 235);
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px* calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px* var(--tw-divide-y-reverse));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+}
+
+.modal-myAccount{
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.modal-left-box{
+    padding-right: 3rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    grid-column: span 3 / span 3;
+    width: 100%;
+    border-width: 2px;
+    box-shadow: 50%;
+    border-radius: 3%;
+    background-color: white;
+}
+
+.modal-profile-a{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem 0;
+  border-radius: .375rem;
+  display: flex;
+  align-items: center;
+}
+
+.modal-profile-logo{
+  flex-shrink: 0;
+  color: rgb(156 163 175);
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .75rem;
+
+}
+
+.modal-manageAcc-a{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem 0;
+  border-radius: .375rem;
+  display: flex;
+  align-items: center;
+}
+
+.modal-mAcc-logo{
+  color: rgb(75 85 99);
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .75rem;
+}
+
+.modal-Jobs-font{
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.modal-career-manage1{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem 0;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.modal-career-manage2{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem 0;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.modal-career-manage3{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem 0;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.modal-career-manage4{
+  color: rgb(107 114 128);
+  font-weight: 500;
+  padding: .5rem 0;
+  /* background-color: rgb(229 231 235); */
+  border-radius: .375rem;
+  align-items: center;
+  display: flex;
+}
+
+.modal-pic-class{
+  color: rgb(156 163 175);
+  flex-shrink: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .75rem;
 }
 
 /* --------------main------------- */

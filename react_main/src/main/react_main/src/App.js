@@ -1,6 +1,6 @@
 import { Button, Container, Navbar , Nav} from 'react-bootstrap';
 import './App.css';
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { Route, Routes, Link, useNavigate, Outlet, Router } from 'react-router-dom';
 import Profile from './routes/Profile.js';
 import Account from './routes/Account.js';
@@ -17,8 +17,13 @@ import Career_management from './routes/Career_management.js';
 import Oksignup from './routes/Oksignup.js';
 import Oauth2Naver from './routes/Oauth2Naver.js';
 import Oauth2Google from './routes/Oauth2Google.js';
+import axios from 'axios';
+import Aside from './routes/Aside.js';
 
 function App() {
+
+  
+
   return (
     <div className="App">
       <body className='body-class'>
@@ -29,7 +34,7 @@ function App() {
             <Route path='/oksignup' element={<Oksignup></Oksignup>}></Route>
             <Route path='/signup/oauth2Naver' element={<Oauth2Naver></Oauth2Naver>}></Route>
             <Route path='/signup/oauth2Google' element={<Oauth2Google></Oauth2Google>}></Route>
-            <Route path='/' element={<LogHeader></LogHeader>}>
+            <Route path='/' element={<Header></Header>}>
               <Route path='' element={<Main></Main>}/>
             </Route>
 
@@ -71,6 +76,66 @@ function App() {
 }
 
 function Header(){
+  
+  const [check, setCheck] = useState(true);
+
+  const [profileCheck, setprofileCheck] = useState(false);
+
+
+  const clickBut = () => {
+      setprofileCheck(!profileCheck);
+  }
+
+  useEffect(() => {
+    console.log("clickBut")
+    console.log(profileCheck);
+  },[clickBut])
+
+  const baseUrl = "http://localhost:3000";
+  
+  useEffect(() => {
+    const checkDuplicateId = async () => {
+      try {
+        const userInfo = JSON.parse(localStorage.getItem('user'));
+        if (true) {
+          const response = await axios.get(`${baseUrl}/api/v1/auth/signup/validation/username?username=${userInfo.id}`);
+          console.log(response.data.data);
+          setCheck(response.data.data);
+          userInfo.usercode = response.data.user.user_code;
+          localStorage.setItem('user', JSON.stringify(userInfo));
+        }
+      } catch (error) {
+        console.error('아이디 중복 검사 에러:', error);
+      }
+    };
+    checkDuplicateId();
+  },[]);
+
+
+  const [opacity, setOpacity] = useState(100);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const softRemover = () => {
+      if (opacity > 0) {
+        setTimeout(() => {
+          setOpacity(opacity - 1);
+        }, 20);
+      } else {
+        setIsVisible(false);
+      }
+    };
+  
+    if (isVisible) {
+      softRemover();
+    }
+  }, [opacity, isVisible]);
+
+  const toggleModal = () => {
+    setIsVisible(!isVisible);
+    setOpacity(100);
+  };
+
   return(
     <div>
   <header className='header-box'>
@@ -109,24 +174,85 @@ function Header(){
           </a>
         </div>
       </div>
-      <div className='head-third-box'>
-        <a href='/recruits/drafts'>
-          <button className='company-but'>
-            <img className='company-pic' src={require('./img1/company.png')}></img>
-            <span className='company'>회사 등록</span>  
-          </button>
-        </a>
-      </div>
+      {check === true ? <>
       <div className='head-forth-box'>
-        <button type='button' aria-haspopup='true' aria-expanded='false'  className='profile-but'>
-          <span className='head-profile-span'>Open user menu</span>
-          <span className='head-profile'>
-            <a href='/settings/profile'>
-            <img className='profile-part' alt='프로필 사진' src={require('./profile.png')}/>
-            </a>
-          </span>
+      <button type='button' aria-haspopup='true' aria-expanded='false'  className='profile-but'>
+        <span className='head-profile-span'>Open user menu</span>
+        <Link to="signin">
+          <button className='buyForShow'>로그인</button>
+        </Link>
+      </button>
+    </div>
+    <div className='head-third-box'>
+      <Link to="signup">
+        <button className='header-signup-but'>
+          <span className='header-signup-font'>회원가입</span>  
         </button>
+      </Link>
+    </div> </> :<>
+    <div className='head-third-box'>
+    <a href='/recruits/drafts'>
+      <button className='company-but'>
+        <img className='company-pic' src={require('./img1/company.png')}></img>
+        <span className='company'>회사 등록</span>  
+      </button>
+    </a>
+  </div>
+  <div className='head-forth-box'>
+    <button type='button' aria-haspopup='true' aria-expanded='false'  className='profile-but'>
+      <span className='head-profile-span'>Open user menu</span>
+      <span className='head-profile'>
+        
+        <img onClick={clickBut} className='profile-part' alt='프로필 사진' src={require('./profile.png')}/>
+        {!profileCheck &&<div >
+        <div className="profileModal" style={{ opacity: `${opacity}%` }}>
+        <aside className='modal-left-box'>
+    <nav className='left-box-nav'>
+      <div className='left-first-box'>
+        <div className='modal-myAccount'>내 계정</div>
+        <div className='profile'>
+          <a className='modal-profile-a' href='/settings/profile'>
+            <img className='modal-profile-logo' src={require('./img1/profile.png')}/>
+            <span className='profile-font'>프로필</span>
+          </a>
+          <a className='modal-manageAcc-a' href='/settings/account'>
+            <img className='modal-mAcc-logo' src={require('./img1/manageAccount.png')}/>
+            <span className='manageAccount-font'>계정 관리</span>
+          </a>
+        </div>
       </div>
+      <div className='modal-line'>
+        <div className='modal-Jobs-font'>Jobs</div>
+        <div>
+          <a className='modal-career-manage1' href='/settings/career'>
+            <img className='modal-pic-class' src={require('./img1/eryukseo.png')}></img>
+            <span className='career-font'>이력서 관리</span>
+          </a>
+          <a className='modal-career-manage2' href='/settings/talents'>
+            <img className='modal-pic-class' src={require('./img1/guzik.png')}></img>
+            <span className='career-font'>구직 내역 관리</span>
+          </a>
+          <a className='modal-career-manage3' href='/settings/bookmarks'>
+            <img className='modal-pic-class' src={require('./img1/position.png')}></img>
+            <span className='career-font'>관심 포지션</span>
+          </a>
+          <a className='modal-career-manage4' href='/settings/contract'>
+            <img className='modal-pic-class' src={require('./img1/positionEryuk.png')}></img>
+            <span className='career-font'>포지션 지원이력</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </aside>
+  </div>
+  </div>
+  }
+  
+      </span>
+    </button>
+  </div>
+  </>
+    }
     </div>
   </nav>
 </header>
@@ -135,67 +261,6 @@ function Header(){
   )
 }
 
-function LogHeader(){
-  return(
-    <div>
-  <header className='header-box'>
-  <nav aria-label='Global' className='nav-box'>
-    <div className='nav-div1'>
-      <div className='head-first-box'>
-        <a className='head-logo-box' href='/'>
-          <span className='head-logo-span'>OKKY Jobs</span>
-          <img className='head-logo' alt='OKKY Logo' src={require('./img1/logo4.PNG')}/>
-        </a>
-        <div className='head-words-box'>
-          <div className='shrink-0'>
-            <a className='words-box1' href='/contract'>계약직</a>
-          </div>
-          <div className='shrink-1'>
-            <a className='words-box1' href='/fulltime'>정규직</a>
-          </div>
-          <div className='shrink-1'>
-            <a className='words-box1' href='/talents'>Talent</a>
-          </div>
-          <div className='shrink-1'>
-            <a className='words-box1' href='/evalcom'>좋은회사/나쁜회사</a>
-          </div>
-          <div className='words-box-space'></div>
-          <div className='words-box-mid-space'>
-          </div>
-        </div>
-      </div>
-      <div className='head-second-box'>
-        <div className='head-second-box1'>
-          <a href='/products/01010301'>
-            <button className='buyForShow'>열람권 구매</button>
-          </a>
-          <a href='/products/01010101'>
-            <button className='buyForShow'>등록권 구매</button>
-          </a>
-        </div>
-      </div>
-      <div className='head-third-box'>
-        <a href='/recruits/drafts'>
-          <button className='header-signup-but'>
-            <span className='header-signup-font'>회원가입</span>  
-          </button>
-        </a>
-      </div>
-      <div className='head-forth-box'>
-        <button type='button' aria-haspopup='true' aria-expanded='false'  className='profile-but'>
-          <span className='head-profile-span'>Open user menu</span>
-          <a href='/products/01010301'>
-            <button className='buyForShow'>열람권 구매</button>
-          </a>
-        </button>
-      </div>
-    </div>
-  </nav>
-</header>
-  <Outlet></Outlet>
-</div>
-  )
-}
 
 function Footer(){
   return(
