@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,12 +28,13 @@ import com.study.security20240312yeonho.securityService.auth.PrincipalDetailsSer
 import com.study.security20240312yeonho.securityWeb.dto.CMRespDto;
 import com.study.security20240312yeonho.securityWeb.dto.SigninReqDto;
 import com.study.security20240312yeonho.securityWeb.dto.SignupReqDto;
+import com.study.security20240312yeonho.securityWeb.dto.UpdateProfileReqDto;
 import com.study.security20240312yeonho.securityWeb.dto.UsernameCheckReqDto;
 
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("/api/v1/auth")
+@RequestMapping("/v1/auth")
 @RequiredArgsConstructor
 public class AuthController {
 
@@ -40,6 +42,7 @@ public class AuthController {
 	private final AuthService authService;
 	private final UserRepository userRepository;
 	
+	//회원가입 API
 	@ValidCheck
 	@PostMapping("/signup")
 	public ResponseEntity<?> signup(@Valid @RequestBody SignupReqDto signupReqDto, BindingResult bindingResult) {
@@ -68,6 +71,8 @@ public class AuthController {
 		}		
 		return ResponseEntity.ok().body(new CMRespDto<>(1, "회원가입 성공", status,null,user));
 	}
+	
+	//유저 체크 API
 	@Log
 	@Timer
 	@ValidCheck
@@ -99,7 +104,7 @@ public class AuthController {
 		}
 		return ResponseEntity.ok().body(new CMRespDto<>(1, "회원 가입 여부", status,usernameCheckReqDto,user));
 	}
-	
+	//유저 닉네임 중복성 체크 API
 	@Log
 	@Timer
 	@ValidCheck
@@ -125,8 +130,7 @@ public class AuthController {
 		return ResponseEntity.ok().body(new CMRespDto<>(1, "회원 가입 여부", status,usernameCheckReqDto,user));
 	}
 	
-	
-	
+	//로그인 API
 	@Log
 	@Timer
 	@ValidCheck
@@ -153,6 +157,7 @@ public class AuthController {
 //			}
 			System.out.println(signinReqDto.getPassword());
 			System.out.println(new BCryptPasswordEncoder().matches(signinReqDto.getPassword(), beforePassword)); 
+			System.out.println(user);
 			if(new BCryptPasswordEncoder().matches(signinReqDto.getPassword(), beforePassword)) {
 				System.out.println("비밀번호 일치");
 				status = true;
@@ -167,6 +172,7 @@ public class AuthController {
 		return ResponseEntity.ok().body(new CMRespDto<>(1, "회원 가입 여부", status,null,user));
 	}
 	
+	//회원탈퇴 API
 	@Log
 	@Timer
 	@DeleteMapping("/resignup/usercode")
@@ -185,6 +191,25 @@ public class AuthController {
 		return ResponseEntity.ok().body(new CMRespDto<>(1, "회원 탈퇴 성공", status,null,null));
 	}
 	
+	//회원정보 수정 API
+	@ValidCheck
+	@PutMapping("/modify")
+	public ResponseEntity<?> modifyProfile(@Valid @RequestBody UpdateProfileReqDto updateProfileReqDto, BindingResult bindingResult) {
+		
+		boolean status = false;
+		User user = new User();
+		try {
+			status = principalDetailsService.updateProfile(updateProfileReqDto);
+			System.out.println(updateProfileReqDto);
+			System.out.println("usercode : " + updateProfileReqDto.getUsercode());
+			user = userRepository.findUserByUsername(updateProfileReqDto.getId());
+			System.out.println(user);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return ResponseEntity.ok().body(new CMRespDto<>(-1, "회원가입 실패", status,null,user));
+		}		
+		return ResponseEntity.ok().body(new CMRespDto<>(1, "회원가입 성공", status,null,user));
+	}
 	
 } 
 

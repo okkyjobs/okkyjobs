@@ -11,6 +11,7 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
       <BrowserRouter>
+        {/* <ScrollToTop /> */}
         <GoogleOAuthProvider clientId="746948307914-midde1q7s8btvfmr3lf80to82aut3vdi.apps.googleusercontent.com"
         // onScriptLoadError={() => console.log("실패")}
         // onScriptLoadSuccess={() => console.log("성공")}

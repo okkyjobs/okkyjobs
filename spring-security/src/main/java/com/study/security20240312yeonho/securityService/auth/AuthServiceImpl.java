@@ -46,4 +46,10 @@ public class AuthServiceImpl implements AuthService{
 		return userRepository.findUserByUsername(signinReqDto.getPassword()) == null;
 	}
 
+	@Override
+	public boolean updateProfileByUserCode() throws Exception {
+		return false;
+	}
+
+
 }

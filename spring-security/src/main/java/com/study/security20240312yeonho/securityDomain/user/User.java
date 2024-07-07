@@ -37,6 +37,13 @@ public class User {
 	
 	private int authority;
 	
+	private Integer job_detail1_code;
+	private Integer job_detail2_code;
+	private String user_link;
+	private String one_line;
+	private String profile_img;
+	
+	
 //	private LocalDateTime create_date;
 //	private LocalDateTime update_date;
 

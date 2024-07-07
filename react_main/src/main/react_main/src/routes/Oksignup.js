@@ -19,7 +19,7 @@ function Oksignup(){
   const [checkUsernameFlag, setCheckUsernameFlag] = useState(true);
 
   useEffect(() => {
-  const storedUserinfo = JSON.parse(localStorage.getItem('userinfo'));
+  const storedUserinfo = JSON.parse(localStorage.getItem('user'));
   if (storedUserinfo) {
     setId(storedUserinfo.id);
     setPassword(storedUserinfo.password);

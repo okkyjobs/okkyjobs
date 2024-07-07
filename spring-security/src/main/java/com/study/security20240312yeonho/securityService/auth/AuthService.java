@@ -12,4 +12,5 @@ public interface AuthService {
 	public boolean checkUsername(SigninReqDto signinReqDto) throws Exception;
 	public boolean signup() throws Exception;
 	public boolean signin() throws Exception;
+	public boolean updateProfileByUserCode() throws Exception;
 }

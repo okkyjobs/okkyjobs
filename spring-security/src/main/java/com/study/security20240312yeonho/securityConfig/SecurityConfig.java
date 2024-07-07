@@ -50,8 +50,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.permitAll() // 4) 모두 접근 권한을 부여하겠다.
 		.and()
 		.formLogin() // 5) 로그인 방식은 form 로그인을 사용하겠다.
-		.loginPage("/auth/signin") // 6) 로그인 페이지 해당 get요청을 통해 접근
-		.loginProcessingUrl("/auth/signin") // 7) 로그인 요청(post)
+		.loginPage("/signin") // 6) 로그인 페이지 해당 get요청을 통해 접근
+		.loginProcessingUrl("/signin") // 7) 로그인 요청(post)
 		.failureHandler(new AuthFailerHandler())
 		.and()
 		.oauth2Login()
@@ -59,7 +59,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		.userService(principalOauth2UserService)
 		.and()
 		
-		.defaultSuccessUrl("/index");
+		.defaultSuccessUrl("/");
 		
 		
 	}

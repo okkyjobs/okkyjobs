@@ -450,14 +450,37 @@ button, input, optgroup, select, textarea {
 }
 
 .modal-line{
-  padding-top: 1.25rem;
-  border-color: rgb(229 231 235);
+  padding-top: 1rem;
+  border-color: rgb(225, 225, 225);
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px* calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px* var(--tw-divide-y-reverse));
   --tw-space-y-reverse: 0;
   margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+}
+
+.modal-line2{
+  border-color: rgb(225, 225, 225);
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px* calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px* var(--tw-divide-y-reverse));
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+}
+
+.margin-left-box-nav{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 2rem;
+}
+
+.margin-left-first-box{
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.875rem* calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.875rem* var(--tw-space-y-reverse));
+
 }
 
 .modal-myAccount{
@@ -467,15 +490,17 @@ button, input, optgroup, select, textarea {
 }
 
 .modal-left-box{
-    padding-right: 3rem;
+    padding-right: 1rem;
     padding-left: 1rem;
     padding-bottom: .5rem;
     grid-column: span 3 / span 3;
     width: 100%;
     border-width: 2px;
-    box-shadow: 50%;
     border-radius: 3%;
     background-color: white;
+}
+
+.modal-profile{
 }
 
 .modal-profile-a{

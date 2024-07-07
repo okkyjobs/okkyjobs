@@ -58,6 +58,10 @@
 
 }
 
+.profile-main-box{
+  display: flex;
+  margin-bottom: 40px;
+}
 
 /* --------------main------------- */
 
@@ -575,6 +579,7 @@
   margin-left: 13rem;
   display: flex;
   flex-direction: column; 
+  justify-content: center;
 }
 
 .profile-photo-font{
@@ -712,6 +717,21 @@
 
 .save-but{
   opacity: .4;
+  background-color: rgb(0 144 249);
+  --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    color: rgb(255 255 255);
+    line-height: 1.5rem;
+    font-weight: 600;
+    font-size: .875rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    cursor : no-drop
+}
+
+.save-but2{
   background-color: rgb(0 144 249);
   --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);

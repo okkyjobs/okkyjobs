@@ -19,17 +19,25 @@
   			  um.personal_info_agree,
   			  um.role,
   			  um.user_provider,
-  			  um.authority
+  			  um.authority,
+			  ud.job_detail1_code,
+			  ud.job_detail2_code,
+			  ud.user_link,
+			  ud.one_line,
+			  ud.profile_img,
+			  ud.create_date,
+			  ud.update_date
 		  FROM
 			  user_mst um
+			  JOIN user_detail ud ON um.user_code = ud.user_code
 	 	  WHERE
-			  user_id = #{username}
+			  user_id = #{username};
+			  
 	  </select>
 	  
 	  
 	  <insert id="save" parameterType="com.study.security20240312yeonho.securityDomain.user.User">
-		INSERT INTO
-			user_mst
+		INSERT INTO user_mst
 		values(
 			0,
 			#{user_id},
@@ -47,7 +55,20 @@
 			#{authority},
 			now(),
 			now()
-			)
+			);
+			
+		INSERT INTO
+			user_detail
+		values(
+			(SELECT user_code FROM user_mst WHERE user_id = #{user_id}),
+			null,
+			null,
+			null,
+			null,
+			null,
+			now(),
+			now()
+			);
 	  </insert>
 	  
 	  
@@ -89,6 +110,17 @@
 		   DELETE FROM user_mst
 		   WHERE user_code = #{usercode}
 	  </delete>
+	  
+	  <update id="updateProfile" parameterType="com.study.security20240312yeonho.securityDomain.user.User">
+		UPDATE user_mst
+			SET user_id = #{user_id}, user_name = #{user_name}, user_nickname = #{user_nickname}, user_wishtag = #{user_wishtag}
+			WHERE user_code = #{user_code};  
+		  
+		UPDATE user_detail
+			SET job_detail1_code = #{job_detail1_code}, job_detail2_code = #{job_detail2_code}, one_line = #{one_line}, user_link = #{user_link}, profile_img = #{profile_img}
+			WHERE user_code = #{user_code}
+
+	  </update>
 	  
 	  
   </mapper>

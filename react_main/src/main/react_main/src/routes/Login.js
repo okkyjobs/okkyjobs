@@ -49,7 +49,23 @@ function Login() {
         if (response.data) {
           setLoginStatus(true);
           console.log(response.data.user); //
-          localStorage.setItem('user', JSON.stringify({id: response.data.user.user_id, password : response.data.user.user_password, email: response.data.user.user_email, name : response.data.user.user_name, nickname : response.data.user.user_nickname, wishtag : response.data.user.user_wishtag, emailAgree : response.data.user.user_email_agree, type : response.data.user.user_type, serviceAgree :  response.data.user.service_agree, personalInfoAgree : response.data.user.personal_info_agree, provider : response.data.user.user_provider, profileImage : profileImage, checkUsernameFlag : checkUsernameFlag}));
+          localStorage.setItem('user', JSON.stringify({id: response.data.user.user_id,
+                                                       password : response.data.user.user_password,
+                                                       email: response.data.user.user_email,
+                                                       name : response.data.user.user_name, 
+                                                       nickname : response.data.user.user_nickname, 
+                                                       wishtag : response.data.user.user_wishtag, 
+                                                       emailAgree : response.data.user.user_email_agree, 
+                                                       type : response.data.user.user_type, 
+                                                       serviceAgree :  response.data.user.service_agree, 
+                                                       personalInfoAgree : response.data.user.personal_info_agree, 
+                                                       provider : response.data.user.user_provider,
+                                                       jobDetail1Code : response.data.user.job_detail1_code,
+                                                       jobDetail2Code : response.data.user.job_detail2_code,
+                                                       oneLine : response.data.user.one_line,
+                                                       userLink : response.data.user.user_link,
+                                                       profileImage : response.data.user.profile_img, 
+                                                       checkUsernameFlag : checkUsernameFlag}));
           // const user = JSON.parse(localStorage.getItem('user'));
           // console.log(user);
           // alert("로그인 성공");

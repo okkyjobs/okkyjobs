@@ -13,6 +13,7 @@ import com.study.security20240312yeonho.securityDomain.user.User;
 import com.study.security20240312yeonho.securityDomain.user.UserRepository;
 import com.study.security20240312yeonho.securityWeb.dto.SigninReqDto;
 import com.study.security20240312yeonho.securityWeb.dto.SignupReqDto;
+import com.study.security20240312yeonho.securityWeb.dto.UpdateProfileReqDto;
 
 import lombok.RequiredArgsConstructor;
 
@@ -111,7 +112,9 @@ public class PrincipalDetailsService implements UserDetailsService{
 		return userRepository.save(signupReqDto.toEntity()) > 0;
 	}
 	
-	
+	public boolean updateProfile(UpdateProfileReqDto updateProfileReqDto) throws Exception{
+		return userRepository.updateProfile(updateProfileReqDto.toEntity()) > 0;
+	}
 	
 }
 

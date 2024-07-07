@@ -104,6 +104,7 @@ const handleSubmit = async (e) => {
     const response = await axios.post(baseUrl + "/api/v1/auth/signup", {
       id, password, email, name, nickname, wishtag, emailAgree, type, serviceAgree, personalInfoAgree ,provider, checkUsernameFlag
     });
+    localStorage.setItem('user', JSON.stringify({id: id, password : password, email: email, name : name, nickname : nickname, wishtag : wishtag, emailAgree : emailAgree, type : type, serviceAgree :  serviceAgree, personalInfoAgree : personalInfoAgree, provider : provider, checkUsernameFlag : checkUsernameFlag}));
     alert("회원가입 성공!")
     navigate("/oksignup")
     // alert("서버에 보내고 서버가 다시 보낸 데이터\n" + JSON.stringify(response.data));

@@ -1,7 +1,7 @@
 import { Button, Container, Navbar , Nav} from 'react-bootstrap';
 import './App.css';
 import { createContext, useEffect, useState } from 'react';
-import { Route, Routes, Link, useNavigate, Outlet, Router } from 'react-router-dom';
+import { Route, Routes, Link, useNavigate, Outlet, Router, useLocation } from 'react-router-dom';
 import Profile from './routes/Profile.js';
 import Account from './routes/Account.js';
 import Career from './routes/Career.js';
@@ -22,7 +22,7 @@ import Aside from './routes/Aside.js';
 
 function App() {
 
-  
+
 
   return (
     <div className="App">
@@ -81,15 +81,12 @@ function Header(){
 
   const [profileCheck, setprofileCheck] = useState(false);
 
+  const navigate = useNavigate();
 
   const clickBut = () => {
       setprofileCheck(!profileCheck);
   }
 
-  useEffect(() => {
-    console.log("clickBut")
-    console.log(profileCheck);
-  },[clickBut])
 
   const baseUrl = "http://localhost:3000";
   
@@ -99,7 +96,6 @@ function Header(){
         const userInfo = JSON.parse(localStorage.getItem('user'));
         if (true) {
           const response = await axios.get(`${baseUrl}/api/v1/auth/signup/validation/username?username=${userInfo.id}`);
-          console.log(response.data.data);
           setCheck(response.data.data);
           userInfo.usercode = response.data.user.user_code;
           localStorage.setItem('user', JSON.stringify(userInfo));
@@ -111,30 +107,13 @@ function Header(){
     checkDuplicateId();
   },[]);
 
+  const Logout = () => {
+    localStorage.removeItem('user');
+    navigate("/")
+    window.location.reload(); 
+  }
 
-  const [opacity, setOpacity] = useState(100);
-  const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const softRemover = () => {
-      if (opacity > 0) {
-        setTimeout(() => {
-          setOpacity(opacity - 1);
-        }, 20);
-      } else {
-        setIsVisible(false);
-      }
-    };
-  
-    if (isVisible) {
-      softRemover();
-    }
-  }, [opacity, isVisible]);
-
-  const toggleModal = () => {
-    setIsVisible(!isVisible);
-    setOpacity(100);
-  };
 
   return(
     <div>
@@ -204,45 +183,55 @@ function Header(){
       <span className='head-profile'>
         
         <img onClick={clickBut} className='profile-part' alt='프로필 사진' src={require('./profile.png')}/>
-        {!profileCheck &&<div >
-        <div className="profileModal" style={{ opacity: `${opacity}%` }}>
+        {profileCheck &&<div>
+        <div className="profileModal" >
         <aside className='modal-left-box'>
-    <nav className='left-box-nav'>
-      <div className='left-first-box'>
+    <nav className='margin-left-box-nav'>
+      <div className='margin-left-first-box'>
         <div className='modal-myAccount'>내 계정</div>
-        <div className='profile'>
-          <a className='modal-profile-a' href='/settings/profile'>
-            <img className='modal-profile-logo' src={require('./img1/profile.png')}/>
+        <div className='modal-profile'>
+          <Link className='modal-profile-a' to='/settings/profile'>
+            <img className='modal-profile-logo' src={require('./img1/modalProfile.png')}/>
             <span className='profile-font'>프로필</span>
-          </a>
-          <a className='modal-manageAcc-a' href='/settings/account'>
-            <img className='modal-mAcc-logo' src={require('./img1/manageAccount.png')}/>
+          </Link>
+          <Link className='modal-manageAcc-a' to='/settings/account'>
+            <img className='modal-mAcc-logo' src={require('./img1/modalmanageAccount.png')}/>
             <span className='manageAccount-font'>계정 관리</span>
-          </a>
+          </Link>
+          <Link className='modal-manageAcc-a' to='/settings/account'>
+            <img className='modal-mAcc-logo' src={require('./img1/activityLog.png')}/>
+            <span className='manageAccount-font'>활동내역</span>
+          </Link>
         </div>
       </div>
-      <div className='modal-line'>
+      </nav>
+      <div className='modal-line'></div>
+      <nav className='margin-left-box-nav'>
         <div className='modal-Jobs-font'>Jobs</div>
         <div>
-          <a className='modal-career-manage1' href='/settings/career'>
-            <img className='modal-pic-class' src={require('./img1/eryukseo.png')}></img>
+          <Link className='modal-career-manage1' to='/settings/career'>
+            <img className='modal-pic-class' src={require('./img1/modaleryukseo.png')}></img>
             <span className='career-font'>이력서 관리</span>
-          </a>
-          <a className='modal-career-manage2' href='/settings/talents'>
-            <img className='modal-pic-class' src={require('./img1/guzik.png')}></img>
+          </Link>
+          <Link className='modal-career-manage2' to='/settings/talents'>
+            <img className='modal-pic-class' src={require('./img1/modalguzik.png')}></img>
             <span className='career-font'>구직 내역 관리</span>
-          </a>
-          <a className='modal-career-manage3' href='/settings/bookmarks'>
-            <img className='modal-pic-class' src={require('./img1/position.png')}></img>
+          </Link>
+          <Link className='modal-career-manage3' to='/settings/bookmarks'>
+            <img className='modal-pic-class' src={require('./img1/modalposition.png')}></img>
             <span className='career-font'>관심 포지션</span>
-          </a>
-          <a className='modal-career-manage4' href='/settings/contract'>
-            <img className='modal-pic-class' src={require('./img1/positionEryuk.png')}></img>
+          </Link>
+          <Link className='modal-career-manage4' to='/settings/contract'>
+            <img className='modal-pic-class' src={require('./img1/modalpositionEryuk.png')}></img>
             <span className='career-font'>포지션 지원이력</span>
-          </a>
+          </Link>
         </div>
+      </nav>
+      <div className='modal-line2'></div>
+      <div className='modal-career-manage4' onClick={Logout}>
+            <img className='modal-pic-class' src={require('./img1/modalLogout.png')}></img>
+            <span className='career-font'>로그아웃</span>
       </div>
-    </nav>
   </aside>
   </div>
   </div>
